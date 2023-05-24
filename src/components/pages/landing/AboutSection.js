@@ -53,8 +53,8 @@ const AboutSection = () => {
               {aboutFeatures.map((feature,index) => (
                 <Flex my={"1.8rem"} key={index}>
                   <Image
-                    width="64"
-                    height="64"
+                    width="100px"
+                    height="100px"
                     src={feature.iconUrl}
                     alt={feature.iconAlt}
                     margin={"auto 0"}

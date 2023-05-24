@@ -4,15 +4,15 @@ import { Menu, MenuButton, MenuList, MenuItem, Box, Flex, Link, Text, UnorderedL
 const Navbar = () => {
     const { isOpen, onToggle } = useDisclosure();
     return (
-        <Box as="nav" color="white" mt={"40"} borderRadius={"20%"} position={"sticky"} top={"10"} zIndex={"1"} >
-            <Flex alignItems="center" justifyContent="center" backdropFilter={"blur(20px)"} backgroundColor={"hsla(0,0%,100%,.5)"} margin={"0 auto"} h={"80"} gap={"60"} width={"55%"} borderRadius={"100px"} borderBottom={"2px solid hsla(0,0%,79%,.8)"}>
+        <Box as="nav" color="white" mt={"40px"} borderRadius={"20%"} position={"sticky"} top={"10"} zIndex={"1"} >
+            <Flex alignItems="center" justifyContent="center" backdropFilter={"blur(20px)"} backgroundColor={"hsla(0,0%,100%,.5)"} margin={"0 auto"} h={"80px"} gap={"60px"} width={"55%"} borderRadius={"100px"} borderBottom={"2px solid hsla(0,0%,79%,.8)"}>
                 <Box>
                     <Text fontSize="xl" fontWeight="bold">
                         <Image src="landing-page/LogoNav.png" w={"4rem"} h={"3.5rem"} />
                     </Text>
                 </Box>
                 <Box>
-                    <UnorderedList display={"flex"} gap={"60"} listStyleType={"none"} >
+                    <UnorderedList display={"flex"} gap={"60px"} listStyleType={"none"} >
                         <ListItem >
                             <Link href="/" style={{ textDecoration: "none" }} color={"black"}>
                                 Home

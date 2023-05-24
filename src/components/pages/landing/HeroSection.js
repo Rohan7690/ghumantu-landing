@@ -10,7 +10,7 @@ import { AiFillBell } from 'react-icons/ai'
 function HeroSection() {
     return (
         <Box>
-            <Flex background={"linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #D0FCFF 100%)"} px={"120"} py={"15"}>
+            <Flex background={"linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #D0FCFF 100%)"} px={"120px"} py={"15px"}>
                 <Flex flexDirection="column" justifyContent={"center"} width={"50%"} fontFamily={"sans-serif"}>
                     <Heading as="h1" color="black" fontWeight={"bold"} fontSize={['48px', '50px']}>
                         <Text as="span" display="inline-block" color={"#19b6e0"}>
@@ -26,12 +26,13 @@ function HeroSection() {
                         Notify Me
                     </Button>
                 </Flex>
-                <Box >
+                <Box width={"50%"}>
                     <Image
                         alt="hero.png"
-                        w="620px"
-                        height="645px"
+                        w="670px"
+                        height="680px"
                         src="/landing-page/hero.png"
+                        mr={"0"}
                     />
                 </Box>
             </Flex>

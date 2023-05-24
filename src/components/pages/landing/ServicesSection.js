@@ -10,7 +10,7 @@ const ServicesSection = () => {
       }, [])
 
   return (
-    <Box mx={"200px"} >
+    <Box mx={"300px"} >
       <Flex direction="column" textAlign={"center"} >
         <Box  >
           <Heading as="h2"  color="black" fontSize={"2rem"} alignContent={"center"} >
@@ -21,9 +21,9 @@ const ServicesSection = () => {
           </Text>
         </Box>
       </Flex>
-      <Flex  maxW={"124rem"} mt={"3rem"}>
-        <Box lineHeight={"1.7"} height={"500"} mr={"8rem"} data-aos='fade-right'>
-          <Heading as="h3" color="black" fontSize={"2rem"}>
+      <Flex  maxW={"124rem"} my={"3rem"}>
+        <Box lineHeight={"1.7"} height={"500px"} mr={"8rem"} w={"478px"} data-aos='fade-right' >
+          <Heading as="h3" color="black" fontSize={"2rem"} my={"20px"}>
             Budget Planner
           </Heading>
           <Text color={"#666"} fontSize={"1.1rem"} as='p' >
@@ -35,26 +35,26 @@ const ServicesSection = () => {
         </Box>
         <Box>
           <Image
-            width="450px"
-            height="450px"
+            width="500px"
+            height="490px"
             src="landing-page/service_budget.png"
             alt="service_img"
             data-aos='fade-left'
           />
         </Box>
       </Flex>
-      <Flex maxW={"124rem"} mt={"3rem"}>
+      <Flex maxW={"124rem"} my={"3rem"}>
         <Box>
           <Image
-            width="450px"
-            height="400px"
+            width="500px"
+            height="420px"
             src="landing-page/service_route.png"
             alt="service_img"
             data-aos='fade-right'
           />
         </Box>
-        <Box lineHeight={"1.7"} height={"500"} w={"478"} ml={"8rem"} data-aos='fade-left'>
-          <Heading as="h3" color="black" fontSize={"2rem"}>
+        <Box lineHeight={"1.7"} height={"500px"} w={"478px"} ml={"8rem"} data-aos='fade-left'>
+          <Heading as="h3" color="black" fontSize={"2rem"} my={"20px"} >
             Route Mapping
           </Heading>
           <Text as='p' color={"#666"} fontSize={"1.1rem"}>
@@ -66,9 +66,9 @@ const ServicesSection = () => {
           </Button>
         </Box>
       </Flex>
-      <Flex maxW={"124rem"} mt={"3rem"}>
-        <Box  lineHeight={"1.7"} height={"500"} mr={"8rem"} data-aos='fade-right'>
-          <Heading as="h3" color="black" fontSize={"2rem"}>
+      <Flex maxW={"124rem"} my={"3rem"}>
+        <Box  lineHeight={"1.7"} height={"500px"} mr={"8rem"}w={"478px"} data-aos='fade-right'>
+          <Heading as="h3" color="black" fontSize={"2rem"} my={"20px"}>
             Local search engine
           </Heading>
           <Text as='p' color={"#666"} fontSize={"1.1rem"}>
@@ -81,8 +81,8 @@ const ServicesSection = () => {
         </Box>
         <Box data-aos='fade-left'>
           <Image
-            width="450px"
-            height="450px"
+            width="500px"
+            height="490px"
             src="landing-page/service_search.png"
           />
         </Box>

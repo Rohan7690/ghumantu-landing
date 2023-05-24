@@ -9,9 +9,9 @@ const IssuesSection = () => {
     AOS.init();
   }, [])
   return (
-    <Box px={"150"} my={"5rem"} data-aos='fade-up'>
-      <Flex direction="column" margin={"0 auto"} maxW={"40rem"} textAlign={"center"} mb={"1"}>
-        <Box alignContent={"center"} justifyContent={"center"}  >
+    <Box px={"230px"} my={"5rem"} data-aos='fade-up'>
+      <Flex direction="column" margin={"0 auto"}  maxW={"40rem"} textAlign={"center"} mb={"1rem"}>
+        <Box alignContent={"center"} justifyContent={"center"}  my={"50px"}>
           <Heading as="h2" color="black" fontSize={"2rem"} alignContent={"center"} >
             <Box color={"#19b6e0"} display={"inline"} mr={"10px"} >
               Issues
@@ -24,41 +24,41 @@ const IssuesSection = () => {
         </Box>
       </Flex>
       <Flex color={"#666"} gap={"30"} lineHeight={"30px"}>
-        <Box width={"350"} height={"250"} backgroundImage={"landing-page/feature_card_bg1.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30"} pl={"10"}>
+        <Box width={"380px"} height={"300px"} backgroundImage={"landing-page/feature_card_bg1.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30"} pl={"10px"}>
           <Image
-            width="72"
-            height="72"
+            width="72px"
+            height="72px"
             src="landing-page/feature_card_budget.png"
             alt="budget_img"
           />
-          <Box width={"319"} height={"120"} mt={"20px"} fontSize={"1.1rem"}>
-            {/* The whole travel experience gets disheartening when you can't make the plans according to your budget and do not able to find any option where you can plan your trip along with */}
+          <Box  mt={"20px"} fontSize={"1.1rem"}>
+            The whole travel experience gets disheartening when you can't make the plans according to your budget and do not able to find any option where you can plan your trip along with
             <Text color={"#19b6e0"} display={"inline"}> budget calculation</Text>
           </Box>
         </Box>
-        <Box width={"350"} height={"250"} backgroundImage={"landing-page/feature_card_bg2.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30"} pl={"10"}>
+        <Box width={"380px"} height={"300px"} backgroundImage={"landing-page/feature_card_bg2.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30px"} pl={"10px"}>
           <Image
-            width="72"
-            height="72"
+            width="72px"
+            height="72px"
             src="landing-page/feature_card_route.png"
             alt="route_img"
           />
-          <Box width={"319"} height={"120"}>
+          <Box  mt={"20px"} >
             <Text fontSize={"1.1rem"} as='p'>
-              {/* Whenever we plan a trip to a new place, we all want to know the best tourist destinations of that place but do not able to get the right placements of the destinations on a */}
+              Whenever we plan a trip to a new place, we all want to know the best tourist destinations of that place but do not able to get the right placements of the destinations on a
               <Text as='span' color={"#19b6e0"} display={"inline"}> single route</Text>.
             </Text>
           </Box>
         </Box>
-        <Box width={"350"} height={"250"} backgroundImage={"landing-page/feature_card_bg3.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30"} pl={"10"}>
+        <Box width={"380px"} height={"300px"} backgroundImage={"landing-page/feature_card_bg3.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30"} pl={"10px"}>
           <Image
-            width="72"
-            height="72"
+            width="72px"
+            height="72px"
             src="landing-page/feature_card_local.png"
             alt="local_img"
           />
-          <Box width={"319"} height={"120"} mt={"20px"} fontSize={"1.1rem"}>
-            {/* Exploring the authentic local food, activities, and places is a vital part of any travel experience, but it can be challenging to find reliable information even from the most{" "} */}
+          <Box  mt={"20px"} fontSize={"1.1rem"}>
+            Exploring the authentic local food, activities, and places is a vital part of any travel experience, but it can be challenging to find reliable information even from the most{" "}
             <Text color={"#19b6e0"} display={"inline"}>knowledgeable place</Text>.
           </Box>
         </Box>
