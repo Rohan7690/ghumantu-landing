@@ -8,7 +8,7 @@ const Navbar = () => {
             <Flex alignItems="center" justifyContent="center" backdropFilter={"blur(20px)"} backgroundColor={"hsla(0,0%,100%,.5)"} margin={"0 auto"} h={"80px"} gap={"60px"} width={"55%"} borderRadius={"100px"} borderBottom={"2px solid hsla(0,0%,79%,.8)"}>
                 <Box>
                     <Text fontSize="xl" fontWeight="bold">
-                        <Image src="landing-page/LogoNav.png" w={"4rem"} h={"3.5rem"} />
+                        <Image src="landing-page/logoNav.png" w={"4rem"} h={"3.5rem"} />
                     </Text>
                 </Box>
                 <Box>
