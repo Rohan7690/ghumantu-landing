@@ -26,8 +26,8 @@ const ServicesSection = () => {
           <Heading as="h3" color="black" fontSize={"2rem"}>
             Budget Planner
           </Heading>
-          <Text color={"#666"} fontSize={"1.1rem"} >
-            Plan your dream trip easily using our <Text  color={"#19b6e0"} display={"inline"}>Budget Planner</Text>. Estimate all your travel expenses, including accommodation, food, and transportation, to ensure your trip fits your budget. Whether you're a budget traveler or seeking a luxurious experience, our tool is here to help.
+          <Text color={"#666"} fontSize={"1.1rem"} as='p' >
+            Plan your dream trip easily using our <Text as='span' color={"#19b6e0"} display={"inline"}>Budget Planner</Text>. Estimate all your travel expenses, including accommodation, food, and transportation, to ensure your trip fits your budget. Whether you're a budget traveler or seeking a luxurious experience, our tool is here to help.
           </Text>
           <Button border={"none"} fontSize={"1rem"} borderRadius={"100px"} h={"50px"} mt={"20px"} w={"100px"} color={"white"} background={"linear-gradient(93.01deg,#14cdff .65%,#00c2ff)"}>
             Notify Me
@@ -57,8 +57,9 @@ const ServicesSection = () => {
           <Heading as="h3" color="black" fontSize={"2rem"}>
             Route Mapping
           </Heading>
-          <Text color={"#666"} fontSize={"1.1rem"}>
-            Discover curated travel itineraries for every spot in your travels, creating a unique travel experience that sets us apart from generic mapping tools like Google Maps. Our <Text  color={"#19b6e0"} display={"inline"}>one-way maps</Text> guide you to the best spots, allowing you to explore like a local insider.
+          <Text as='p' color={"#666"} fontSize={"1.1rem"}>
+            Discover curated travel itineraries for every spot in your travels, creating a unique travel experience that sets us apart from generic mapping tools like Google Maps. Our 
+            <Text as='span' color={"#19b6e0"} display={"inline"}>one-way maps</Text> guide you to the best spots, allowing you to explore like a local insider.
           </Text>
           <Button border={"none"} fontSize={"1rem"} borderRadius={"100px"} h={"50px"} mt={"20px"} w={"100px"} color={"white"} background={"linear-gradient(93.01deg,#14cdff .65%,#00c2ff)"} >
             Notify Me
@@ -70,8 +71,9 @@ const ServicesSection = () => {
           <Heading as="h3" color="black" fontSize={"2rem"}>
             Local search engine
           </Heading>
-          <Text color={"#666"} fontSize={"1.1rem"}>
-            Experience the essence of your next vacation by exploring the local flavors of your destination with our <Text  color={"#19b6e0"} display={"inline"}>comprehensive search engine</Text>. Find the best local restaurants, places to visit, and activities to do, and discover must-try dishes that will make your trip unforgettable.
+          <Text as='p' color={"#666"} fontSize={"1.1rem"}>
+            Experience the essence of your next vacation by exploring the local flavors of your destination with our 
+            <Text as='span' color={"#19b6e0"} display={"inline"}>comprehensive search engine</Text>. Find the best local restaurants, places to visit, and activities to do, and discover must-try dishes that will make your trip unforgettable.
           </Text>
           <Button border={"none"} fontSize={"1rem"} borderRadius={"100px"} h={"50px"} mt={"20px"} w={"100px"} color={"white"} background={"linear-gradient(93.01deg,#14cdff .65%,#00c2ff)"}>
             Notify Me

@@ -32,7 +32,7 @@ const IssuesSection = () => {
             alt="budget_img"
           />
           <Box width={"319"} height={"120"} mt={"20px"} fontSize={"1.1rem"}>
-            The whole travel experience gets disheartening when you can't make the plans according to your budget and do not able to find any option where you can plan your trip along with
+            {/* The whole travel experience gets disheartening when you can't make the plans according to your budget and do not able to find any option where you can plan your trip along with */}
             <Text color={"#19b6e0"} display={"inline"}> budget calculation</Text>
           </Box>
         </Box>
@@ -45,7 +45,7 @@ const IssuesSection = () => {
           />
           <Box width={"319"} height={"120"}>
             <Text fontSize={"1.1rem"} as='p'>
-              Whenever we plan a trip to a new place, we all want to know the best tourist destinations of that place but do not able to get the right placements of the destinations on a
+              {/* Whenever we plan a trip to a new place, we all want to know the best tourist destinations of that place but do not able to get the right placements of the destinations on a */}
               <Text as='span' color={"#19b6e0"} display={"inline"}> single route</Text>.
             </Text>
           </Box>
@@ -58,7 +58,7 @@ const IssuesSection = () => {
             alt="local_img"
           />
           <Box width={"319"} height={"120"} mt={"20px"} fontSize={"1.1rem"}>
-            Exploring the authentic local food, activities, and places is a vital part of any travel experience, but it can be challenging to find reliable information even from the most{" "}
+            {/* Exploring the authentic local food, activities, and places is a vital part of any travel experience, but it can be challenging to find reliable information even from the most{" "} */}
             <Text color={"#19b6e0"} display={"inline"}>knowledgeable place</Text>.
           </Box>
         </Box>
