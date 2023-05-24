@@ -24,13 +24,13 @@ const aboutFeatures = [
 const AboutSection = () => {
   return (
     <Box background={"#19b6e0"} textColor={"white"} py={"4rem"}>
-      {/* <Box textAlign={"center"} my={"2rem"}>
+      <Box textAlign={"center"} my={"2rem"}>
         <Heading as="h2" fontSize={"2rem"}>
           About Us
         </Heading>
         <Text fontSize={"1.3rem"}>Plan your perfect itinerary and explore the world effortlessly with Ghumantu, your ultimate travel planning tool.</Text>
-      </Box> */}
-      {/* <Flex maxW={"85rem"} margin={"0 auto"}>
+      </Box>
+      <Flex maxW={"85rem"} margin={"0 auto"}>
         <Flex >
           <Box>
             <Image
@@ -87,7 +87,7 @@ const AboutSection = () => {
             alt=""
           />
         </Box>
-      </Flex> */}
+      </Flex>
     </Box>
   );
 };
