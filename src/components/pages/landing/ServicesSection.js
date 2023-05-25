@@ -10,7 +10,7 @@ const ServicesSection = () => {
       }, [])
 
   return (
-    <Box mx={"300px"} >
+    <Box mx={{sm:'20px',md:"50px",lg:'300px'}} >
       <Flex direction="column" textAlign={"center"} >
         <Box  >
           <Heading as="h2"  color="black" fontSize={"2rem"} alignContent={"center"} >
@@ -21,7 +21,7 @@ const ServicesSection = () => {
           </Text>
         </Box>
       </Flex>
-      <Flex  maxW={"124rem"} my={"3rem"}>
+      <Flex  maxW={"124rem"} my={"3rem"} flexDir={{sm:'column',md:'column',lg:'row'}}>
         <Box lineHeight={"1.7"} height={"500px"} mr={"8rem"} w={"478px"} data-aos='fade-right' >
           <Heading as="h3" color="black" fontSize={"2rem"} my={"20px"}>
             Budget Planner
@@ -43,7 +43,7 @@ const ServicesSection = () => {
           />
         </Box>
       </Flex>
-      <Flex maxW={"124rem"} my={"3rem"}>
+      <Flex maxW={"124rem"} my={"3rem"}flexDir={{sm:'column',md:'column',lg:'row'}}>
         <Box>
           <Image
             width="500px"
@@ -66,7 +66,7 @@ const ServicesSection = () => {
           </Button>
         </Box>
       </Flex>
-      <Flex maxW={"124rem"} my={"3rem"}>
+      <Flex maxW={"124rem"} my={"3rem"}flexDir={{sm:'column',md:'column',lg:'row'}}>
         <Box  lineHeight={"1.7"} height={"500px"} mr={"8rem"}w={"478px"} data-aos='fade-right'>
           <Heading as="h3" color="black" fontSize={"2rem"} my={"20px"}>
             Local search engine

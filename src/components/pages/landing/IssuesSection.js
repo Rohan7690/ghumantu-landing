@@ -9,7 +9,7 @@ const IssuesSection = () => {
     AOS.init();
   }, [])
   return (
-    <Box px={"230px"} my={"5rem"} data-aos='fade-up'>
+    <Box px={{sm:'50px',md:'100px',lg:"230px"}} my={"5rem"} data-aos='fade-up'>
       <Flex direction="column" margin={"0 auto"}  maxW={"40rem"} textAlign={"center"} mb={"1rem"}>
         <Box alignContent={"center"} justifyContent={"center"}  my={"50px"}>
           <Heading as="h2" color="black" fontSize={"2rem"} alignContent={"center"} >
@@ -23,7 +23,7 @@ const IssuesSection = () => {
           </Text>
         </Box>
       </Flex>
-      <Flex color={"#666"} gap={"30"} lineHeight={"30px"}>
+      <Flex color={"#666"} gap={"30"} lineHeight={"30px"} flexDir={{sm:'column',md:'column',lg:'row'}}>
         <Box width={"380px"} height={"300px"} backgroundImage={"landing-page/feature_card_bg1.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30"} pl={"10px"}>
           <Image
             width="72px"

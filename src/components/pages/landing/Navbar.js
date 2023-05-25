@@ -5,7 +5,7 @@ const Navbar = () => {
     const { isOpen, onToggle } = useDisclosure();
     return (
         <Box as="nav" color="white" mt={"40px"} borderRadius={"20%"} position={"sticky"} top={"10"} zIndex={"1"} >
-            <Flex alignItems="center" justifyContent="center" backdropFilter={"blur(20px)"} backgroundColor={"hsla(0,0%,100%,.5)"} margin={"0 auto"} h={"80px"} gap={"60px"} width={"55%"} borderRadius={"100px"} borderBottom={"2px solid hsla(0,0%,79%,.8)"}>
+            <Flex alignItems="center" justifyContent="center" backdropFilter={"blur(20px)"} backgroundColor={"hsla(0,0%,100%,.5)"} margin={"0 auto"} h={"80px"} gap={"60px"} width={{sm:"100%",md:'100%',lg:'80%',xl:'55%'}} borderRadius={{sm:"0px",md:"0px",lg:"100px",xl:'100px'}} borderBottom={"2px solid hsla(0,0%,79%,.8)"}>
                 <Box>
                     <Text fontSize="xl" fontWeight="bold">
                         <Image src="landing-page/logoNav.png" w={"4rem"} h={"3.5rem"} />
@@ -24,15 +24,15 @@ const Navbar = () => {
                                 <MenuButton mr={"10px"} color={"black"}>
                                     Services
                                 </MenuButton>
-                                <MenuList borderRadius={'20%'} w={"6rem"} p={"1rem"} backgroundColor={"#fff"} dropShadow={"0 8px 16px 0 rgba(0,0,0,.2)"} pb={"15px"}>
+                                <MenuList borderRadius={'20%'}    backgroundColor={"#fff"} dropShadow={"0 8px 16px 0 rgba(0,0,0,.2)"}>
                                     <MenuItem background={"white"} border={'none'}>
-                                        <Link height={"40"} w={"100"} fontSize={"1rem"} color={"#666"} style={{ textDecoration: "none" }} href="/">Budget Planner</Link>
+                                        <Link   fontSize={"1rem"} color={"#666"} style={{ textDecoration: "none" }} href="/">Budget Planner</Link>
                                     </MenuItem>
                                     <MenuItem background={"white"} border={'none'}>
-                                        <Link height={"40"} w={"100"} fontSize={"1rem"} color={"#666"} style={{ textDecoration: "none" }} href="/">Route Mapping</Link>
+                                        <Link   fontSize={"1rem"} color={"#666"} style={{ textDecoration: "none" }} href="/">Route Mapping</Link>
                                     </MenuItem>
-                                    <MenuItem background={"white"} border={'none'} pb={"15px"}>
-                                        <Link height={"40"} w={"100"} fontSize={"1rem"} color={"#666"} style={{ textDecoration: "none" }} href="/">Local Search Engine</Link>
+                                    <MenuItem background={"white"} border={'none'} >
+                                        <Link   fontSize={"1rem"} color={"#666"} style={{ textDecoration: "none" }} href="/">Local Search Engine</Link>
                                     </MenuItem>
                                 </MenuList>
                             </Menu>

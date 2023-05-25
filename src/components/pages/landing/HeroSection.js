@@ -10,9 +10,9 @@ import { AiFillBell } from 'react-icons/ai'
 function HeroSection() {
     return (
         <Box>
-            <Flex background={"linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #D0FCFF 100%)"} px={"120px"} py={"15px"}>
-                <Flex flexDirection="column" justifyContent={"center"} width={"50%"} fontFamily={"sans-serif"}>
-                    <Heading as="h1" color="black" fontWeight={"bold"} fontSize={['48px', '50px']}>
+            <Flex background={"linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #D0FCFF 100%)"} px={{sm:'10px',md:'50px',lg:"80px",xl:'120px'}} py={"15px"} flexDir={{sm:'column',md:'column',lg:'row'}}>
+                <Flex flexDirection="column" justifyContent={"center"} width={{sm:"100%",md:'100%',lg:'50%'}} mt={{md:'20px'}} fontFamily={"sans-serif"}>
+                    <Heading as="h1" color="black" fontWeight={"bold"} fontSize={{sm:'30px',md: '48px',lg:'50px'}}>
                         <Text as="span" display="inline-block" color={"#19b6e0"}>
                             Customize
                         </Text>
@@ -29,8 +29,8 @@ function HeroSection() {
                 <Box width={"50%"}>
                     <Image
                         alt="hero.png"
-                        w="670px"
-                        height="680px"
+                        w={{md:'2000px',lg:'672px'}}
+                        height={{sm:'800px',md:'1000px',lg:'680px'}}
                         src="/landing-page/hero.png"
                         mr={"0"}
                     />
