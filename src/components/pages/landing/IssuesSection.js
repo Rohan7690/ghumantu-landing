@@ -36,18 +36,16 @@ const IssuesSection = () => {
             <Text color={"#19b6e0"} display={"inline"}> budget calculation</Text>
           </Box>
         </Box>
-        <Box width={"380px"} height={"300px"} backgroundImage={"landing-page/feature_card_bg2.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30px"} pl={"10px"}>
+        <Box width={"380px"} height={"300px"} flexDir={{sm:'column-reverse',md:'column-reverse',lg:'row'}} backgroundImage={"landing-page/feature_card_bg2.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30px"} pl={"10px"}>
           <Image
             width="72px"
             height="72px"
             src="landing-page/feature_card_route.png"
             alt="route_img"
           />
-          <Box  mt={"20px"} >
-            <Text fontSize={"1.1rem"} as='p'>
+          <Box  mt={"20px"} fontSize={"1.1rem"} as='p' >
               Whenever we plan a trip to a new place, we all want to know the best tourist destinations of that place but do not able to get the right placements of the destinations on a
               <Text as='span' color={"#19b6e0"} display={"inline"}> single route</Text>.
-            </Text>
           </Box>
         </Box>
         <Box width={"380px"} height={"300px"} backgroundImage={"landing-page/feature_card_bg3.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30"} pl={"10px"}>

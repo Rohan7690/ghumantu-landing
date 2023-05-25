@@ -26,13 +26,13 @@ function HeroSection() {
                         Notify Me
                     </Button>
                 </Flex>
-                <Box width={"50%"}>
+                <Box width={{sm:'70%',md:'90%',lg:"50%"}}>
                     <Image
                         alt="hero.png"
-                        w={{md:'2000px',lg:'672px'}}
+                        w={{sm:'2000px',md:'2000px',lg:'672px'}}
                         height={{sm:'800px',md:'1000px',lg:'680px'}}
                         src="/landing-page/hero.png"
-                        mr={"0"}
+                       
                     />
                 </Box>
             </Flex>
