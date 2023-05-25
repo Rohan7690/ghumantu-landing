@@ -3,6 +3,7 @@ import HeroSection from './HeroSection'
 import IssuesSection from './IssuesSection'
 import ServicesSection from './ServicesSection'
 import AboutSection from './AboutSection'
+import LandingFooter from './LandingFooter'
 
 function LandingPage() {
   return (
@@ -11,6 +12,7 @@ function LandingPage() {
       <IssuesSection />
       <ServicesSection />
       <AboutSection />
+      <LandingFooter/>
     </div>
   )
 }
