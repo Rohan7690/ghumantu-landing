@@ -91,36 +91,50 @@ const Destinations = () => {
       </Text>
       <Flex flexDir={"row"} wrap={'wrap'} gap={'20px'} px={{ sm: '50px', md: "200px" }}>
         {destinations.map((destination, index) => (
-          <Box
+          <Flex
+            flexDirection={'column'}
+            position='relative'
+            m='1.4rem'
+            width={'25rem'}
+            justifyContent={'space-between'}
             key={index}
+            borderRadius={'8px'}
+            overflow={'hidden'}
+            transition={'ease-in'}
+            border={'2px solid #dfdfdf'}
             _hover={{
               boxShadow: '0px 0px 7px 0px rgba(0,0,0,0.25)',
               transform: 'scale(1.05)',
               transition: 'all 0.3s ease-in-out'
             }}
-            w={'400px'}
-            as="div" gap={"30px"} py={"20px"} >
+          >
             <Box as="div" w='100%' height={'26rem'}>
-              <Image className="destination_Card--img" src={destination?.img.src}  alt="card image" />
+              <Image width={['inherit']} height={['280px', 'inherit', 'inherit']} objectFit='cover'
+                src={destination?.img.src} alt="card image" />
             </Box>
             {/* //--------------------------------- Destination Card tags --------------------------- */}
-            <Box className="destination_CardTagsFloat">
-              <Box className="destination_CardTags" >
-               
-                <Flex justifyContent={'space-between'} w={'100%'}>
-                <Tag fontSize='lg'
-                    py={'0.8rem'} px={'1.5rem'}
-                    borderRadius={'2.4rem'}  height={'80%'}>
-                    <TagLabel>Exclusive ⚡</TagLabel>
-                  </Tag>
-                  <Tag
-                    fontSize='lg'
-                    py={'0.8rem'} px={'1.5rem'}
-                    borderRadius={'2.4rem'} height={'80%'}>
-                    <TagLabel>Verified</TagLabel>
-                    <TagRightIcon as={GoVerified} />
-                  </Tag>
-                  <Button borderRadius={'100%'}
+            <Box position='absolute' left='1rem' top='2rem' width='90%'>
+              <Flex
+                justifyContent={'space-between'}
+                alignItems='center'
+                flexWrap={'wrap'}
+                py={'0.6rem'}
+                px={'0'}
+                w={'100%'}>
+                <Tag
+                  fontSize='lg'
+                  py={'0.8rem'} px={'1.5rem'}
+                  borderRadius={'2.4rem'} height={'80%'}>
+                  <TagLabel>Exclusive ⚡</TagLabel>
+                </Tag>
+                <Tag
+                  fontSize='lg'
+                  py={'0.8rem'} px={'1.5rem'}
+                  borderRadius={'2.4rem'} height={'80%'}>
+                  <TagLabel>Verified</TagLabel>
+                  <TagRightIcon as={GoVerified} />
+                </Tag>
+                <Button borderRadius={'100%'}
                   onClick={() => {
                     setWish(!wish);
                   }}
@@ -132,51 +146,49 @@ const Destinations = () => {
                     <AiOutlineHeart className="blue destination_Card_WishlistBtn" />
                   )}
                 </Button>
-                </Flex>
-  
-                  {/* If this tag is in the property then only it will show */}
-                  {/* {true && (
-                          <span className="destination_CardTags_Tag1 destination_CardTags_Tag">
-                            Exclusive ⚡
-                          </span>
-                        )}
-                        {true && (
-                          <span className="destination_CardTags_Tag2 destination_CardTags_Tag">
-                            Verified <GoVerified className="blue" />
-                          </span>
-                        )} */}
-                
-                {/* //--------------------------------- Button for wishlist --------------------------- */}
-                
-              </Box>
+              </Flex>
             </Box>
             {/* //--------------------------------- Destination Card Content --------------------------- */}
             <Box className="destination_CardContent">
-              <Box className="destination_Card--heading ">
+              <Text fontSize='2rem' m='2rem'
+                __css={{
+                  fontWeight: '700',
+                  lineHeight: '140%',
+                  letterSpacing: '0.5px',
+                }}
+              >
                 {destination?.name}
-              </Box>
+              </Text>
               <Box className="destination_Card--para">{destination?.description}</Box>
-              {/* //--------------------------------- Card info statss --------------------------- */}
-              <Flex className="destination_CardStats">
-                <Text as={'span'} className="destination_CardStats--location">
+              {/* //--------------------------------- Card info stats --------------------------- */}
+              <Flex
+                color='#666666'
+                fontSize={'2rem'}
+                className="destination_CardStats">
+                <Flex as={'span'}
+                  alignItems='center'
+                  ml='2rem'
+                >
                   <HiLocationMarker className="destination_CardStats--icon" />
-                  {destinations.location}
-                </Text>
-                <Text as={'span'} className="destination_CardStats--profiles">
+                  {destination.location}
+                </Flex>
+                <Flex as={'span'} className="destination_CardStats--profiles">
                   <MdPeopleAlt className="destination_CardStats--icon" />
-                  {destinations.people}
-                </Text>
-                <Text as={'span'} className="destination_CardStats--rate">
+                  <Text color='#666666'>
+                    {destination.people}
+                  </Text>
+                </Flex>
+                <Flex as={'span'} className="destination_CardStats--rate">
                   <AiFillStar className="destination_CardStats--icon yellow" />
-                  {destinations.rating}
-                </Text>
+                  {destination.rating}
+                </Flex>
               </Flex>
               {/* //--------------------------------- Card CTA --------------------------- */}
-              <Button className="destination_FinNow_Btn findNow--btn btn" width={'100%'} borderRadius={'100px'} color={'white'} backgroundColor={'linear-gradient(93.01deg,#14cdff .65%,#00c2ff)'}>
-                Notify Me 
-              </Button>
+              <button className="btn">
+                Notify Me
+              </button>
             </Box>
-          </Box>
+          </Flex>
         ))}
       </Flex>
     </Box>
