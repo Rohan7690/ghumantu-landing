@@ -7,6 +7,9 @@ import LandingFooter from './LandingFooter'
 import Destinations from './Destinations'
 import ContactForm from './ContactForm'
 
+
+
+
 function LandingPage() {
   return (
     <div>

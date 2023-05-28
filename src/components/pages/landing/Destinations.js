@@ -1,44 +1,80 @@
 
 import { Box, Card, Heading, Text, Image, Flex, Button, Stack, Tag, TagLabel, TagRightIcon } from "@chakra-ui/react";
 import { useState } from "react";
-import { AiOutlineHeart } from "react-icons/ai";
+import { AiOutlineHeart,AiFillStar } from "react-icons/ai";
 import { GoVerified } from "react-icons/go";
 import { HiLocationMarker } from "react-icons/hi"
 import { MdPeopleAlt } from "react-icons/md"
 
-const destinations = [
-  {
-    name: "Jaipur in 3 days",
-    image: "landing-page/destination_card_img1.jpg",
-    description: "Jaipur is the capital of India's Rajasthan state. It evokes the royal family that onceruled the region and that, in 1727, foundedwhat is now called the Old City, or 'PinkCity' for its trademark building color.",
-  },
-  {
-    name: "Goa in 3 days",
-    image: "landing-page/destination_card_img1.jpg",
-    description: "Lying on the western coast, Goa is India's smallest state and unlike any other, known for its endless beaches, stellar nightlife,eclectic seafood, world-heritage listed architecture.",
-  },
-  {
-    name: "Manali in 3 days",
-    image: "landing-page/destination_card_img1.jpg",
-    description: "Manali is a high-altitude Himalayan resorttown in India's northern Himachal Pradeshstate. It has a reputation as a backpackingcenter and honeymoon destination.",
-  },
-  {
-    name: "Kashmir in 3 days",
-    image: "landing-page/destination_card_img1.jpg",
-    description: "Kashmir is an epitome of natural beauty, and it is renowned the world over for that. You can soak your senses on the many lakes, gardens and hill stations that attract thousands of tourists every year.",
-  },
-  {
-    name: "Prayagraj in 3 days",
-    image: "landing-page/destination_card_img1.jpg",
-    description: "Prayagraj is a city in Uttar Pradesh state, north India. It's at the confluence of theGanges, Yamuna and Saraswati rivers. It'sknown for sites at their sangam(confluence) including the riverside ArdhKumbh Mela.",
-  },
-  {
-    name: "Kerala in 3 days",
-    image: "landing-page/destination_card_img1.jpg",
-    description: "Kerala, a state on India's tropical Malabar Coast, has nearly 600km of Arabian Seashoreline. It's known for its palm-linedbeaches and backwaters, a network of canals.",
-  },
-]
+import jaipur from '../../../assets/cities/jaipur.jpg'
+import goa from '../../../assets/cities/goa.jpg'
+import manali from '../../../assets/cities/manali.jpg'
+import jammuKashmir from '../../../assets/cities/jammu-kashmir.jpg'
+import prayagraj from '../../../assets/cities/prayagraj.webp'
+import kerala from '../../../assets/cities/kerala.jpg'
 
+export const destinations = [
+  {
+    "heading": "Jaipur in 3 days",
+    "desc": "Jaipur is the capital of India’s Rajasthan state. It evokes the royal family that once ruled the region and that, in 1727, founded what is now called the Old City, or “Pink City” for its trademark building color.",
+    "location": "Rajasthan",
+    "people": "6.4k",
+    "rating": "4.5",
+    "img": jaipur,
+    "isVerified": true,
+    "category": "recommended"
+  },
+  {
+    "heading": "Goa in 3 days",
+    "desc": "Lying on the western coast, Goa is India's smallest state and unlike any other, known for its endless beaches, stellar nightlife, eclectic seafood, world-heritage listed architecture.",
+    "location": "Panaji",
+    "people": "5.4k",
+    "rating": "4.5",
+    "img": goa,
+    "isVerified": true,
+    "category": "local"
+  },
+  {
+    "heading": "Manali in 4 days",
+    "desc": "Manali is a high-altitude Himalayan resort town in India’s northern Himachal Pradesh state. It has a reputation as a backpacking center and honeymoon destination.",
+    "location": "Himachal Pradesh",
+    "people": "5.4k",
+    "rating": "4.5",
+    "img": manali,
+    "isVerified": true,
+    "category": "recommended"
+  },
+  {
+    "heading": "Kashmir in 5 days",
+    "desc": "Kashmir is an epitome of natural beauty, and it is renowned the world over for that. You can soak your senses on the many lakes, gardens and hill stations that attract thousands of tourists every year.",
+    "location": "Jammu & Kashmir",
+    "people": "5.4k",
+    "rating": "4.5",
+    "img": jammuKashmir,
+    "isVerified": true,
+    "category": "places"
+  },
+  {
+    "heading": "Prayagraj in 2 days",
+    "desc": "Prayagraj is a city in Uttar Pradesh state, north India. It’s at the confluence of the Ganges, Yamuna and Saraswati rivers. It’s known for sites at their sangam (confluence) including the riverside Ardh Kumbh Mela.",
+    "location": "Uttar Pradesh",
+    "people": "5.4k",
+    "rating": "4.5",
+    "img": prayagraj,
+    "isVerified": true,
+    "category": "recommended"
+  },
+  {
+    "heading": "Kerala in 5 days",
+    "desc": "Kerala, a state on India's tropical Malabar Coast, has nearly 600km of Arabian Sea shoreline. It's known for its palm-lined beaches and backwaters, a network of canals.",
+    "location": "Kerala",
+    "people": "6.4k",
+    "rating": "3.5",
+    "img": kerala,
+    "isVerified": true,
+    "category": "recommended"
+  }
+]
 const Destinations = () => {
   const [wish, setWish] = useState(false)
   return (
@@ -122,15 +158,15 @@ const Destinations = () => {
               <div className="destination_CardStats">
                 <span className="destination_CardStats--location">
                   <HiLocationMarker className="destination_CardStats--icon" />
-                  {card.location}
+                  {destinations.location}
                 </span>
                 <span className="destination_CardStats--profiles">
                   <MdPeopleAlt className="destination_CardStats--icon" />
-                  {card.people}
+                  {destinations.people}
                 </span>
                 <span className="destination_CardStats--rate">
                   <AiFillStar className="destination_CardStats--icon yellow" />
-                  {card.rating}
+                  {destinations.rating}
                 </span>
               </div>
               {/* //--------------------------------- Card CTA --------------------------- */}
