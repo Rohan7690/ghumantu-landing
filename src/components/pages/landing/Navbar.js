@@ -11,7 +11,6 @@ import {
 
 import { HamburgerIcon } from '@chakra-ui/icons'
 
-
 const Navbar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [isMobile, setIsMobile] = useState(false);
@@ -23,7 +22,7 @@ const Navbar = () => {
           setIsMobile(false);
         }
       };
-      
+
       useEffect(() => {
         window.addEventListener('resize', handleResize);
         handleResize();
@@ -32,7 +31,7 @@ const Navbar = () => {
 
     return (
         <Box as="nav" color="white" mt={"40px"} borderRadius={"20%"} position={"sticky"} top={"10"} zIndex={"1"} >
-            <Flex alignItems="center" justifyContent="center" backdropFilter={"blur(20px)"} backgroundColor={"hsla(0,0%,100%,.5)"} margin={"0 auto"} h={"80px"} gap={"60px"} width={{sm:"100%",md:'100%',lg:'80%',xl:'55%'}} borderRadius={{sm:"0px",md:"0px",lg:"100px",xl:'100px'}} borderBottom={"2px solid hsla(0,0%,79%,.8)"}>
+            <Flex alignItems="center" px={{sm:'20px'}} justifyContent={{sm:'space-between',md:'space-between',lg:"center"}}  backdropFilter={"blur(20px)"} backgroundColor={"hsla(0,0%,100%,.5)"} margin={"0 auto"} h={"80px"} gap={"60px"} width={{base:"100%",md:'100%',lg:'80%',xl:'55%'}} borderRadius={{sm:"0px",md:"0px",lg:"100px",xl:'100px'}} borderBottom={"2px solid hsla(0,0%,79%,.8)"}>
                 <Box>
                     <Text fontSize="xl" fontWeight="bold">
                         <Image src="landing-page/logoNav.png" w={"4rem"} h={"3.5rem"} />
@@ -64,7 +63,7 @@ const Navbar = () => {
                                 <MenuButton mr={"10px"} color={"black"}>
                                     Services
                                 </MenuButton>
-                                <MenuList borderRadius={'20%'}    backgroundColor={"#fff"} dropShadow={"0 8px 16px 0 rgba(0,0,0,.2)"}>
+                                <MenuList mt={'20px'} backgroundColor={"#fff"} dropShadow={"0 8px 16px 0 rgba(0,0,0,.2)"}>
                                     <MenuItem background={"white"} border={'none'}>
                                         <Link   fontSize={"1rem"} color={"#666"} style={{ textDecoration: "none" }} href="/">Budget Planner</Link>
                                     </MenuItem>
@@ -108,10 +107,23 @@ const Navbar = () => {
                             </Box>
                             <Box as="span" display="block" marginBottom={4}>
                                 About
-                            </Box>
-                            <Box as="span" display="block" marginBottom={4}>
-                                Services
-                            </Box>
+                            </Box>                    
+                            <Menu>
+                                <MenuButton mr={"10px"} color={"black"}>
+                                    Services
+                                </MenuButton>
+                                <MenuList   backgroundColor={"#fff"} dropShadow={"0 8px 16px 0 rgba(0,0,0,.2)"}>
+                                    <MenuItem background={"white"} border={'none'}>
+                                        <Link   fontSize={"1rem"} color={"#666"} style={{ textDecoration: "none" }} href="/">Budget Planner</Link>
+                                    </MenuItem>
+                                    <MenuItem background={"white"} border={'none'}>
+                                        <Link   fontSize={"1rem"} color={"#666"} style={{ textDecoration: "none" }} href="/">Route Mapping</Link>
+                                    </MenuItem>
+                                    <MenuItem background={"white"} border={'none'} >
+                                        <Link   fontSize={"1rem"} color={"#666"} style={{ textDecoration: "none" }} href="/">Local Search Engine</Link>
+                                    </MenuItem>
+                                </MenuList>
+                            </Menu>
                             <Box as="span" display="block" marginBottom={4}>
                                 Contact
                             </Box>

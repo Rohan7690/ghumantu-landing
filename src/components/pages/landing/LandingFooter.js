@@ -16,7 +16,7 @@ import {
 } from "react-icons/ai"
 const LandingFooter = () => {
   return (
-    <Stack as="footer" role="contentinfo" w="full"
+    <Stack as="footer" role="contentinfo"  w={{md:"100%",lg:"100%"}}
       padding='8'
       color='#fff'
       bgColor={'#04151A'}
@@ -24,18 +24,21 @@ const LandingFooter = () => {
       align='center'
       spacing={8}
       fontFamily='Dm Sans'
+      mt={'50px'}
+      
     >
       <Stack>
         <Image src="landing-page/footerLogo.png" alt="logo" width={"80px"} height={"80px"} />
       </Stack>
       <Stack justify='center' align='center'>
-        <Text fontSize='2xl' w='100%' textAlign='center' color='#fff'>
+        <Text fontSize={{sm:'',md:'2xl',lg:'3xl'}} w='100%' textAlign='center' color='#fff'>
           Plan a perfect adventure with our travel planning tool
         </Text>
       </Stack>
       <Stack direction='row' spacing={10}
         justify='center'
-        fontSize={['md','2xl','3xl']}
+        
+        fontSize={{sm:'sm',md:'2xl',lg:'3xl'}}
         // put a line after each element
         __css={{
           '& > * + *': {
@@ -68,7 +71,7 @@ const LandingFooter = () => {
       </Stack>
       <Divider />
       <Stack>
-        <Stack fontSize='2xl' direction='row' fontWeight='bold' color='#fff'>
+        <Stack fontSize={{sm:'2s',md:'2xl',lg:'2xl'}} direction='row' fontWeight='bold' color='#fff'>
           <Stack direction='row' align='center'>
             <FaCopyright />
             <Text as='span' ml='2'>

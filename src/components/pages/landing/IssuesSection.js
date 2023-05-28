@@ -3,7 +3,14 @@ import { Box, Heading, Flex, Text, Image } from "@chakra-ui/react";
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import React, { useEffect } from "react";
-
+const listitem =()=>[
+  {
+    Itemimg:'',
+    ItemHeading:'',
+    Itempara:'',
+    
+  }
+]
 const IssuesSection = () => {
   useEffect(() => {
     AOS.init();

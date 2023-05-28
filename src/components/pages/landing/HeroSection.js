@@ -10,7 +10,7 @@ import { AiFillBell } from 'react-icons/ai'
 function HeroSection() {
     return (
         <Box>
-            <Flex background={"linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #D0FCFF 100%)"} px={{sm:'10px',md:'50px',lg:"80px",xl:'120px'}} py={"15px"} flexDir={{sm:'column',md:'column',lg:'row'}}>
+            <Flex background={{sm:'landing-page/hero-bg-mobile.png',md:"linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #D0FCFF 100%)",lg:"linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #D0FCFF 100%)"}} px={{sm:'10px',md:'50px',lg:"80px",xl:'120px'}} py={"15px"} flexDir={{sm:'column',md:'column',lg:'row'}}>
                 <Flex flexDirection="column" justifyContent={"center"} width={{sm:"100%",md:'100%',lg:'50%'}} mt={{md:'20px'}} fontFamily={"sans-serif"}>
                     <Heading as="h1" color="black" fontWeight={"bold"} fontSize={{sm:'30px',md: '48px',lg:'50px'}}>
                         <Text as="span" display="inline-block" color={"#19b6e0"}>

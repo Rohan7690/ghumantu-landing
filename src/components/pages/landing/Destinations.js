@@ -36,19 +36,22 @@ const destinations = [
 const Destinations = () => {
   return (
     
-      <Box py={'80px'}>
+      <Box py={'80px'}  >
         <Text as={'div'}   align={"center"}>
         <Heading as={'h2'} my={'20px'}>Most Vistited{' '}<Text as={'span'} color={"#19b6e0"}>Destinations</Text> </Heading>
         <Text as={'p'} fontSize={'1.2rem'} color={"#666"}> Some of the most loved itineraries by our travelers, and sooner you'll able to experience the essence of traveling with us.</Text>
         </Text>
-        <Flex flexDir={"row"} wrap={'wrap'} gap={'20px'} px={"200px"}>
+        <Flex flexDir={"row"} wrap={'wrap'} gap={'20px'} px={{sm:'50px',md:"200px"}}>
         {destinations.map((destination) => (
-          <Box as="div" gap={"30px"}  py={"20px"}>
-            <Card key={destination.name} h={'610px'} w={"400px"}>
+          <Box as="div" gap={"30px"}  py={"20px"} >
+            <Card key={destination.name} h={'610px'} w={"400px"} >
+            <Flex flexDir={"column"} justifyContent={'space-around'}>
               <Image as={'img'} src={destination.image} height={"300px"} w={"100%"}/>
               <Heading as={'h2'} size="md" my={'20px'} >{destination.name}</Heading>
               <Text as={"p"} my={'20px'}>{destination.description}</Text>
               <Button as={'button'} color={'white'} background={"#19b6e0"} borderRadius={'100px'} h={'50px'} >Notify Me</Button>
+            </Flex>
+              
             </Card>
           </Box>
           ))}
