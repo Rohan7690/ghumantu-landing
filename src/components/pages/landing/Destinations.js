@@ -84,19 +84,22 @@ const Destinations = () => {
   const [wish, setWish] = useState(false)
   return (
 
-    <Box py={'80px'}  >
+    <Box w={['100%', '100%', '85%']}
+      mx={'auto'}
+    >
       <Text as={'div'} align={"center"}>
         <Heading as={'h2'} my={'20px'}>Most Vistited{' '}<Text as={'span'} color={"#19b6e0"}>Destinations</Text> </Heading>
         <Text as={'p'} fontSize={'1.2rem'} color={"#666"}> Some of the most loved itineraries by our travelers, and sooner you'll able to experience the essence of traveling with us.</Text>
       </Text>
-      <Flex flexDir={['column','column','row']} 
-      justify='center' alignItems='flex-start' wrap={'wrap'}  px={{ sm: '50px', md: "100px" }}>
+      <Flex flexDir={['column', 'column', 'row']}
+        gap={'5'}
+        justify='center' alignItems='flex-start' wrap={'wrap'} px={{ sm: '50px', md: "100px" }}>
         {destinations.map((destination, index) => (
           <Flex
             flexDirection={'column'}
             position='relative'
             m='1.4rem'
-            width={'22rem'}
+            width={'25rem'}
             justifyContent={'space-between'}
             key={index}
             borderRadius={'8px'}
@@ -112,7 +115,7 @@ const Destinations = () => {
           >
             <Box as="div" w='100%' height={'20rem'}>
               <Image width={['inherit']} height={['280px', '300px', '300px']}
-               objectFit='cover'
+                objectFit='cover'
                 src={destination?.img.src} alt="card image" />
             </Box>
             {/* //--------------------------------- Destination Card tags --------------------------- */}
@@ -174,24 +177,24 @@ const Destinations = () => {
                   fontSize={'20px'}
                 >
                   <HiLocationMarker className="destination_CardStats--icon" size={'20px'} />
-                  {destination.location}
+                  <Text color='#666666' fontSize={'md'}>{destination.location}</Text>
                 </Flex>
                 <Flex as={'span'} className="destination_CardStats--profiles" flexDir={'row'} alignItems='center'>
                   <MdPeopleAlt size={'20px'} className="destination_CardStats--icon" />{' '}
-                  <Text color='#666666' fontSize={'20px'}>
+                  <Text color='#666666' fontSize={'md'}>
                     {destination.people}
                   </Text>
                 </Flex>
                 <Flex as={'span'} className="destination_CardStats--rate" fontSize={'20px'} alignItems='center'>
                   <AiFillStar size={'20px'} className="destination_CardStats--icon yellow" />
-                  {destination.rating}
+                  <Text color='#666666' fontSize={'md'}>{destination.rating}</Text>
                 </Flex>
               </Flex>
               {/* //--------------------------------- Card CTA --------------------------- */}
               <Box>
-              <button className="btn" style={{width:'90%'}}>
-                Notify Me
-              </button>
+                <button className="btn" style={{ width: '90%' }}>
+                  Notify Me
+                </button>
               </Box>
             </Box>
           </Flex>
