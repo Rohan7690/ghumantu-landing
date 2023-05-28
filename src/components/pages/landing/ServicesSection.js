@@ -1,19 +1,19 @@
 
-import { Box, Heading, Flex, Button ,Text,Image,Fade} from "@chakra-ui/react";
+import { Box, Heading, Flex, Button, Text, Image, Fade } from "@chakra-ui/react";
 import AOS from "aos";
 import 'aos/dist/aos.css';
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 
 const ServicesSection = () => {
-    useEffect(() => {
-        AOS.init();
-      }, [])
+  useEffect(() => {
+    AOS.init();
+  }, [])
 
   return (
-    <Box mx={{sm:'20px',md:"50px",lg:'300px'}} >
+    <Box mx={{ sm: '20px', md: "50px", lg: '300px' }} >
       <Flex direction="column" textAlign={"center"} >
         <Box  >
-          <Heading as="h2"  color="black" fontSize={"2rem"} alignContent={"center"} >
+          <Heading as="h2" color="black" fontSize={"2rem"} alignContent={"center"} >
             <Text color={"#19b6e0"} display={"inline"} mr={"5px"} >Our Offerings </Text> To The Travelers
           </Heading>
           <Text color={"#666"} fontSize={"1.2rem"}>
@@ -21,7 +21,7 @@ const ServicesSection = () => {
           </Text>
         </Box>
       </Flex>
-      <Flex  maxW={"124rem"} my={"3rem"} flexDir={{sm:'column',md:'column',lg:'row'}}>
+      <Flex maxW={"124rem"} my={"3rem"} flexDir={{ sm: 'column', md: 'column', lg: 'row' }}>
         <Box lineHeight={"1.7"} height={"500px"} mr={"8rem"} w={"478px"} data-aos='fade-right' >
           <Heading as="h3" color="black" fontSize={"2rem"} my={"20px"}>
             Budget Planner
@@ -35,6 +35,7 @@ const ServicesSection = () => {
         </Box>
         <Box>
           <Image
+            objectFit={"contain"}
             width="500px"
             height="490px"
             src="landing-page/service_budget.png"
@@ -43,9 +44,10 @@ const ServicesSection = () => {
           />
         </Box>
       </Flex>
-      <Flex maxW={"124rem"} my={"3rem"}flexDir={{sm:'column',md:'column',lg:'row'}}>
+      <Flex maxW={"124rem"} my={"3rem"} flexDir={{ sm: 'column', md: 'column', lg: 'row' }}>
         <Box>
           <Image
+            objectFit={"contain"}
             width="500px"
             height="420px"
             src="landing-page/service_route.png"
@@ -58,7 +60,7 @@ const ServicesSection = () => {
             Route Mapping
           </Heading>
           <Text as='p' color={"#666"} fontSize={"1.1rem"}>
-            Discover curated travel itineraries for every spot in your travels, creating a unique travel experience that sets us apart from generic mapping tools like Google Maps. Our 
+            Discover curated travel itineraries for every spot in your travels, creating a unique travel experience that sets us apart from generic mapping tools like Google Maps. Our
             <Text as='span' color={"#19b6e0"} display={"inline"}>one-way maps</Text> guide you to the best spots, allowing you to explore like a local insider.
           </Text>
           <Button border={"none"} fontSize={"1rem"} borderRadius={"100px"} h={"50px"} mt={"20px"} w={"100px"} color={"white"} background={"linear-gradient(93.01deg,#14cdff .65%,#00c2ff)"} >
@@ -66,13 +68,13 @@ const ServicesSection = () => {
           </Button>
         </Box>
       </Flex>
-      <Flex maxW={"124rem"} my={"3rem"}flexDir={{sm:'column',md:'column',lg:'row'}}>
-        <Box  lineHeight={"1.7"} height={"500px"} mr={"8rem"}w={"478px"} data-aos='fade-right'>
+      <Flex maxW={"124rem"} my={"3rem"} flexDir={{ sm: 'column', md: 'column', lg: 'row' }}>
+        <Box lineHeight={"1.7"} height={"500px"} mr={"8rem"} w={"478px"} data-aos='fade-right'>
           <Heading as="h3" color="black" fontSize={"2rem"} my={"20px"}>
             Local search engine
           </Heading>
           <Text as='p' color={"#666"} fontSize={"1.1rem"}>
-            Experience the essence of your next vacation by exploring the local flavors of your destination with our 
+            Experience the essence of your next vacation by exploring the local flavors of your destination with our
             <Text as='span' color={"#19b6e0"} display={"inline"}>comprehensive search engine</Text>. Find the best local restaurants, places to visit, and activities to do, and discover must-try dishes that will make your trip unforgettable.
           </Text>
           <Button border={"none"} fontSize={"1rem"} borderRadius={"100px"} h={"50px"} mt={"20px"} w={"100px"} color={"white"} background={"linear-gradient(93.01deg,#14cdff .65%,#00c2ff)"}>

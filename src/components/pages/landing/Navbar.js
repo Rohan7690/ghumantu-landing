@@ -51,7 +51,7 @@ const Navbar = () => {
           
         />
       ) : (
-                    <UnorderedList display={"flex"} gap={"60px"} listStyleType={"none"} >
+                    <UnorderedList display={"flex"} alignItems={'center'} gap={"60px"} listStyleType={"none"} >
                         <ListItem >
                             <Link href="/" style={{ textDecoration: "none" }} color={"black"}>
                                 Home
