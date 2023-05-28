@@ -1,10 +1,10 @@
-
 import {
   Box, Heading,
   Text, Image,
   Flex, Button,
   Stack, Tag, TagLabel, TagRightIcon
 } from "@chakra-ui/react";
+
 import { useState } from "react";
 import { AiOutlineHeart, AiFillStar } from "react-icons/ai";
 import { GoVerified } from "react-icons/go";
@@ -98,26 +98,42 @@ const Destinations = () => {
               transform: 'scale(1.05)',
               transition: 'all 0.3s ease-in-out'
             }}
+            w={'400px'}
             as="div" gap={"30px"} py={"20px"} >
             <Box as="div" w='100%' height={'26rem'}>
-              <Image className="destination_Card--img" src={destination?.img.src} alt="card image" />
+              <Image className="destination_Card--img" src={destination?.img.src}  alt="card image" />
             </Box>
             {/* //--------------------------------- Destination Card tags --------------------------- */}
-            <div className="destination_CardTagsFloat">
-              <div className="destination_CardTags">
-                <Stack direction='row' spacing={5}>
-                  <Tag fontSize='2xl'
+            <Box className="destination_CardTagsFloat">
+              <Box className="destination_CardTags" >
+               
+                <Flex justifyContent={'space-between'} w={'100%'}>
+                <Tag fontSize='lg'
                     py={'0.8rem'} px={'1.5rem'}
-                    borderRadius={'2.4rem'}>
+                    borderRadius={'2.4rem'}  height={'80%'}>
                     <TagLabel>Exclusive ⚡</TagLabel>
                   </Tag>
                   <Tag
-                    fontSize='2xl'
+                    fontSize='lg'
                     py={'0.8rem'} px={'1.5rem'}
-                    borderRadius={'2.4rem'}>
+                    borderRadius={'2.4rem'} height={'80%'}>
                     <TagLabel>Verified</TagLabel>
                     <TagRightIcon as={GoVerified} />
                   </Tag>
+                  <Button borderRadius={'100%'}
+                  onClick={() => {
+                    setWish(!wish);
+                  }}
+                  className="destination_Card_WishlistWrap btn"
+                >
+                  {wish ? (
+                    <AiFillHeart className="blue destination_Card_WishlistBtn" />
+                  ) : (
+                    <AiOutlineHeart className="blue destination_Card_WishlistBtn" />
+                  )}
+                </Button>
+                </Flex>
+  
                   {/* If this tag is in the property then only it will show */}
                   {/* {true && (
                           <span className="destination_CardTags_Tag1 destination_CardTags_Tag">
@@ -129,48 +145,37 @@ const Destinations = () => {
                             Verified <GoVerified className="blue" />
                           </span>
                         )} */}
-                </Stack>
+                
                 {/* //--------------------------------- Button for wishlist --------------------------- */}
-                <button
-                  onClick={() => {
-                    setWish(!wish);
-                  }}
-                  className="destination_Card_WishlistWrap btn"
-                >
-                  {wish ? (
-                    <AiFillHeart className="blue destination_Card_WishlistBtn" />
-                  ) : (
-                    <AiOutlineHeart className="blue destination_Card_WishlistBtn" />
-                  )}
-                </button>
-              </div>
-            </div>
+                
+              </Box>
+            </Box>
             {/* //--------------------------------- Destination Card Content --------------------------- */}
-            <div className="destination_CardContent">
-              <div className="destination_Card--heading ">
+            <Box className="destination_CardContent">
+              <Box className="destination_Card--heading ">
                 {destination?.name}
-              </div>
-              <div className="destination_Card--para">{destination?.description}</div>
+              </Box>
+              <Box className="destination_Card--para">{destination?.description}</Box>
               {/* //--------------------------------- Card info statss --------------------------- */}
-              <div className="destination_CardStats">
-                <span className="destination_CardStats--location">
+              <Flex className="destination_CardStats">
+                <Text as={'span'} className="destination_CardStats--location">
                   <HiLocationMarker className="destination_CardStats--icon" />
                   {destinations.location}
-                </span>
-                <span className="destination_CardStats--profiles">
+                </Text>
+                <Text as={'span'} className="destination_CardStats--profiles">
                   <MdPeopleAlt className="destination_CardStats--icon" />
                   {destinations.people}
-                </span>
-                <span className="destination_CardStats--rate">
+                </Text>
+                <Text as={'span'} className="destination_CardStats--rate">
                   <AiFillStar className="destination_CardStats--icon yellow" />
                   {destinations.rating}
-                </span>
-              </div>
+                </Text>
+              </Flex>
               {/* //--------------------------------- Card CTA --------------------------- */}
-              <button className="destination_FinNow_Btn findNow--btn btn">
-                Find now
-              </button>
-            </div>
+              <Button className="destination_FinNow_Btn findNow--btn btn" width={'100%'} borderRadius={'100px'} color={'white'} backgroundColor={'linear-gradient(93.01deg,#14cdff .65%,#00c2ff)'}>
+                Notify Me 
+              </Button>
+            </Box>
           </Box>
         ))}
       </Flex>
