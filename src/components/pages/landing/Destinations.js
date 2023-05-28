@@ -89,19 +89,20 @@ const Destinations = () => {
         <Heading as={'h2'} my={'20px'}>Most Vistited{' '}<Text as={'span'} color={"#19b6e0"}>Destinations</Text> </Heading>
         <Text as={'p'} fontSize={'1.2rem'} color={"#666"}> Some of the most loved itineraries by our travelers, and sooner you'll able to experience the essence of traveling with us.</Text>
       </Text>
-      <Flex flexDir={"row"} wrap={'wrap'}  px={{ sm: '50px', md: "100px" }}>
+      <Flex flexDir={['column','column','row']} 
+      justify='center' alignItems='flex-start' wrap={'wrap'}  px={{ sm: '50px', md: "100px" }}>
         {destinations.map((destination, index) => (
           <Flex
             flexDirection={'column'}
             position='relative'
             m='1.4rem'
-            width={'28rem'}
+            width={'22rem'}
             justifyContent={'space-between'}
             key={index}
             borderRadius={'8px'}
             overflow={'hidden'}
             transition={'ease-in'}
-            height={'670px'}
+            // height={'670px'}
             border={'2px solid #dfdfdf'}
             _hover={{
               boxShadow: '0px 0px 7px 0px rgba(0,0,0,0.25)',
@@ -109,29 +110,30 @@ const Destinations = () => {
               transition: 'all 0.3s ease-in-out'
             }}
           >
-            <Box as="div" w='100%' height={'26rem'}>
-              <Image width={['inherit']} height={['280px', '300px', '300px']} objectFit='cover'
+            <Box as="div" w='100%' height={'20rem'}>
+              <Image width={['inherit']} height={['280px', '300px', '300px']}
+               objectFit='cover'
                 src={destination?.img.src} alt="card image" />
             </Box>
             {/* //--------------------------------- Destination Card tags --------------------------- */}
-            <Box position='absolute' left='1rem' top='2rem' width='90%'>
+            <Box position='absolute' left='0.5rem' top='1rem' width='90%'>
               <Flex
                 justifyContent={'space-between'}
                 alignItems='center'
                 flexWrap={'wrap'}
-                py={'0.6rem'}
+                py={'0.2rem'}
                 px={'0'}
                 w={'100%'}>
                 <Tag
                   fontSize='lg'
                   py={'0.8rem'} px={'1.5rem'}
-                  borderRadius={'2.4rem'} height={'80%'}>
+                  borderRadius={'2.4rem'}>
                   <TagLabel>Exclusive ⚡</TagLabel>
                 </Tag>
                 <Tag
                   fontSize='lg'
                   py={'0.8rem'} px={'1.5rem'}
-                  borderRadius={'2.4rem'} height={'80%'}>
+                  borderRadius={'2.4rem'}>
                   <TagLabel>Verified</TagLabel>
                   <TagRightIcon as={GoVerified} />
                 </Tag>
@@ -160,19 +162,16 @@ const Destinations = () => {
               >
                 {destination?.heading}
               </Text>
-              <Box className="destination_Card--para" height={'90px'} fontSize={'20px'}>{destination?.desc}</Box>
+              <Box className="destination_Card--para" h='220px' fontSize={'20px'}>{destination?.desc}</Box>
               {/* //--------------------------------- Card info stats --------------------------- */}
               <Flex
                 color='#666666'
-                fontSize={'2rem'}
                 gap={'30px'}
                 mt={'60px'}
                 className="destination_CardStats" >
                 <Flex as={'span'}
                   alignItems='center'
-                  
                   fontSize={'20px'}
-                  
                 >
                   <HiLocationMarker className="destination_CardStats--icon" size={'20px'} />
                   {destination.location}

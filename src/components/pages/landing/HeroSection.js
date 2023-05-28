@@ -39,7 +39,6 @@ function HeroSection() {
                         w={{ sm: '2000px', md: '2000px', lg: '672px' }}
                         height={{ sm: '800px', md: '1000px', lg: '680px' }}
                         src="/landing-page/hero.png"
-
                     />
                 </Box>
             </Flex>
