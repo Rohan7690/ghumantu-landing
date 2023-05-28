@@ -23,8 +23,10 @@ const aboutFeatures = [
 
 const AboutSection = () => {
   return (
-    <Box background={"#19b6e0"} textColor={"white"} py={"4rem"}>
-      <Box textAlign={"center"} my={"2rem"}>
+    <Box background={"#19b6e0"} textColor={"white"} py={"4rem"} >
+    <Box w={['100%', '100%', '85%']}
+    mx={'auto'}>
+    <Box textAlign={"center"} my={"2rem"}>
         <Heading as="h2" fontSize={"2rem"}>
           About Us
         </Heading>
@@ -86,6 +88,8 @@ const AboutSection = () => {
           />
         </Box>
       </Flex>
+    </Box>
+     
     </Box>
   );
 };

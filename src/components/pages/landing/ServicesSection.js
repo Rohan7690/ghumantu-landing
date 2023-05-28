@@ -10,7 +10,7 @@ const ServicesSection = () => {
   }, [])
 
   return (
-    <Box mx={{ sm: '20px', md: "50px", lg: '300px' }} >
+    <Box mx={{ sm: '20px', md: "50px", lg: '230px' }} >
       <Flex direction="column" textAlign={"center"} >
         <Box  >
           <Heading as="h2" color="black" fontSize={"2rem"} alignContent={"center"} >
