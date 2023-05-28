@@ -1,7 +1,12 @@
 
-import { Box, Card, Heading, Text, Image, Flex, Button, Stack, Tag, TagLabel, TagRightIcon } from "@chakra-ui/react";
+import {
+  Box, Heading,
+  Text, Image,
+  Flex, Button,
+  Stack, Tag, TagLabel, TagRightIcon
+} from "@chakra-ui/react";
 import { useState } from "react";
-import { AiOutlineHeart,AiFillStar } from "react-icons/ai";
+import { AiOutlineHeart, AiFillStar } from "react-icons/ai";
 import { GoVerified } from "react-icons/go";
 import { HiLocationMarker } from "react-icons/hi"
 import { MdPeopleAlt } from "react-icons/md"
@@ -94,16 +99,8 @@ const Destinations = () => {
               transition: 'all 0.3s ease-in-out'
             }}
             as="div" gap={"30px"} py={"20px"} >
-            {/* <Card key={destination.name} h={'610px'} w={"400px"} >
-              <Flex flexDir={"column"} justifyContent={'space-around'}>
-                <Image as={'img'} src={destination.image} height={"300px"} w={"100%"} />
-                <Heading as={'h2'} size="md" my={'20px'} >{destination.name}</Heading>
-                <Text as={"p"} my={'20px'}>{destination.description}</Text>
-                <Button as={'button'} color={'white'} background={"#19b6e0"} borderRadius={'100px'} h={'50px'} >Notify Me</Button>
-              </Flex>
-            </Card> */}
             <Box as="div" w='100%' height={'26rem'}>
-              <Image className="destination_Card--img" src={destination?.image} alt="card image" />
+              <Image className="destination_Card--img" src={destination?.img.src} alt="card image" />
             </Box>
             {/* //--------------------------------- Destination Card tags --------------------------- */}
             <div className="destination_CardTagsFloat">

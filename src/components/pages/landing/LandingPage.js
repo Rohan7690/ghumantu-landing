@@ -17,7 +17,7 @@ function LandingPage() {
       <IssuesSection />
       <ServicesSection />
       <AboutSection />
-      <Destinations />
+      {/* <Destinations /> */}
       <ContactForm/>
       <LandingFooter/>
       
