@@ -47,7 +47,9 @@ const ServicesSection = () => {
           />
         </Box>
       </Flex>
-      <Flex maxW={"124rem"} my={"3rem"} flexDir={['column-reverse', 'column-reverse', 'row']}>
+      <Flex maxW={"124rem"} justifyContent='center' gap={[5, 10, 20]} my={"3rem"}
+        flexDir={['column-reverse', 'column-reverse', 'row']}>
+        {/* Left Box */}
         <Box>
           <Image
             objectFit={"contain"}
@@ -58,7 +60,8 @@ const ServicesSection = () => {
             data-aos='fade-right'
           />
         </Box>
-        <Box lineHeight={"1.7"} height={"500px"} w={"478px"} ml={"8rem"} data-aos='fade-left'>
+        {/* Right Box */}
+        <Box lineHeight={"1.7"} height={"500px"} w={"478px"} data-aos='fade-left'>
           <Heading as="h3" color="black" fontSize={"2rem"} my={"20px"} >
             Route Mapping
           </Heading>
