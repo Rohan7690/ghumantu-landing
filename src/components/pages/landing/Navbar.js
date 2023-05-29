@@ -32,7 +32,8 @@ const Navbar = () => {
                 borderBottom={"2px solid hsla(0,0%,79%,.8)"}
                 mx='auto'
                 justifyContent='space-between'
-                position={"sticky"} top={['0', '0', '10']}
+                position={"sticky"}
+                 top={['0', '0', '10']}
                 zIndex={"10"}>
                 {/* Logo (Left Section) */}
                 <Flex justifyContent='center' alignItems='center'>

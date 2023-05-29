@@ -1,5 +1,5 @@
 
-import { Box, Heading, Flex, Button, Text, Image, Fade } from "@chakra-ui/react";
+import { Box, Heading, Flex, Button, Text, Image } from "@chakra-ui/react";
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import React, { useEffect } from "react";
@@ -10,7 +10,10 @@ const ServicesSection = () => {
   }, [])
 
   return (
-    <Box mx={['20px', "50px",  '230px' ]} >
+    <Box
+      w={['100%', '100%', '85%']}
+      mx={'auto'}
+      my="10" >
       <Flex direction="column" textAlign={"center"} >
         <Box  >
           <Heading as="h2" color="black" fontSize={"2rem"} alignContent={"center"} >
@@ -21,7 +24,7 @@ const ServicesSection = () => {
           </Text>
         </Box>
       </Flex>
-      <Flex maxW={"124rem"} my={"3rem"} flexDir={[ 'column','column', 'row' ]}>
+      <Flex maxW={"124rem"} my={"3rem"} flexDir={['column', 'column', 'row']}>
         <Box lineHeight={"1.7"} height={"500px"} mr={"8rem"} w={"478px"} data-aos='fade-right' >
           <Heading as="h3" color="black" fontSize={"2rem"} my={"20px"}>
             Budget Planner
@@ -44,7 +47,7 @@ const ServicesSection = () => {
           />
         </Box>
       </Flex>
-      <Flex maxW={"124rem"} my={"3rem"} flexDir={[ 'column',  'column',  'row' ]}>
+      <Flex maxW={"124rem"} my={"3rem"} flexDir={['column-reverse', 'column-reverse', 'row']}>
         <Box>
           <Image
             objectFit={"contain"}
@@ -63,12 +66,13 @@ const ServicesSection = () => {
             Discover curated travel itineraries for every spot in your travels, creating a unique travel experience that sets us apart from generic mapping tools like Google Maps. Our
             <Text as='span' color={"#19b6e0"} display={"inline"}>one-way maps</Text> guide you to the best spots, allowing you to explore like a local insider.
           </Text>
-          <Button border={"none"} fontSize={"1rem"} borderRadius={"100px"} h={"50px"} mt={"20px"} w={"100px"} color={"white"} background={"linear-gradient(93.01deg,#14cdff .65%,#00c2ff)"} >
+          <Button border={"none"} fontSize={"1rem"} borderRadius={"100px"}
+            h={"50px"} mt={"20px"} w={"100px"} color={"white"} background={"linear-gradient(93.01deg,#14cdff .65%,#00c2ff)"} >
             Notify Me
           </Button>
         </Box>
       </Flex>
-      <Flex maxW={"124rem"} my={"3rem"} flexDir={[ 'column',  'column',  'row' ]}>
+      <Flex maxW={"124rem"} my={"3rem"} flexDir={['column', 'column', 'row']}>
         <Box lineHeight={"1.7"} height={"500px"} mr={"8rem"} w={"478px"} data-aos='fade-right'>
           <Heading as="h3" color="black" fontSize={"2rem"} my={"20px"}>
             Local search engine
