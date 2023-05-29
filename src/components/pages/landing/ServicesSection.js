@@ -15,7 +15,7 @@ const ServicesSection = () => {
       mx={'auto'}
       my="10" >
       <Flex direction="column" textAlign={"center"} >
-        <Box  >
+        <Box >
           <Heading as="h2" color="black" fontSize={"2rem"} alignContent={"center"} >
             <Text color={"#19b6e0"} display={"inline"} mr={"5px"} >Our Offerings </Text> To The Travelers
           </Heading>
@@ -24,8 +24,8 @@ const ServicesSection = () => {
           </Text>
         </Box>
       </Flex>
-      <Flex maxW={"124rem"} my={"3rem"} flexDir={['column', 'column', 'row']}>
-        <Box lineHeight={"1.7"} height={"500px"} mr={"8rem"} w={"478px"} data-aos='fade-right' >
+      <Flex maxW={"124rem"} my={"3rem"} flexDir={['column', 'column', 'row']} >
+        <Box lineHeight={"1.7"} height={"500px"} mr={"8rem"} w={['100%','100%','480px']} data-aos='fade-right' objectFit={'contain'}  >
           <Heading as="h3" color="black" fontSize={"2rem"} my={"20px"}>
             Budget Planner
           </Heading>
@@ -40,28 +40,28 @@ const ServicesSection = () => {
           <Image
             objectFit={"contain"}
             width="500px"
-            height="490px"
+            height="480px"
             src="landing-page/service_budget.png"
             alt="service_img"
             data-aos='fade-left'
           />
         </Box>
       </Flex>
-      <Flex maxW={"124rem"} justifyContent='center' gap={[5, 10, 20]} my={"3rem"}
+      <Flex maxW={"124rem"}  gap={[5, 10, 20]} my={"3rem"}
         flexDir={['column-reverse', 'column-reverse', 'row']}>
         {/* Left Box */}
         <Box>
           <Image
             objectFit={"contain"}
             width="500px"
-            height="420px"
+            height="480px"
             src="landing-page/service_route.png"
             alt="service_img"
             data-aos='fade-right'
           />
         </Box>
         {/* Right Box */}
-        <Box lineHeight={"1.7"} height={"500px"} w={"478px"} data-aos='fade-left'>
+        <Box lineHeight={"1.7"} height={"500px"} w={['100%','100%','480px']} data-aos='fade-left'>
           <Heading as="h3" color="black" fontSize={"2rem"} my={"20px"} >
             Route Mapping
           </Heading>
@@ -76,7 +76,7 @@ const ServicesSection = () => {
         </Box>
       </Flex>
       <Flex maxW={"124rem"} my={"3rem"} flexDir={['column', 'column', 'row']}>
-        <Box lineHeight={"1.7"} height={"500px"} mr={"8rem"} w={"478px"} data-aos='fade-right'>
+        <Box lineHeight={"1.7"} height={"500px"} mr={"8rem"} w={['100%','100%','480px']} data-aos='fade-right'>
           <Heading as="h3" color="black" fontSize={"2rem"} my={"20px"}>
             Local search engine
           </Heading>
@@ -91,7 +91,7 @@ const ServicesSection = () => {
         <Box data-aos='fade-left'>
           <Image
             width="500px"
-            height="490px"
+            height="480px"
             src="landing-page/service_search.png"
           />
         </Box>
