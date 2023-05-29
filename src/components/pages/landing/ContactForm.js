@@ -33,13 +33,13 @@ const ContactForm = () => {
                 launch!
               </Text>
             </Heading>
-            <Text fontSize={[ '1.2rem',  '1.2rem']} w={[ '100%',  '70%' ]}>
+            <Text fontSize={[ '1.2rem',  '1.2rem']} w={[ '100%',  '100%' ]}>
               Submit your email address 📧 below, and we'll let you know as soon as we go live.
             </Text>
-            <HStack spacing={2} fontSize={'1.2rem'} w={'70%'} >
+            <HStack spacing={2} fontSize={'1.2rem'} w={[ '100%',  '100%' ]} >
               <Text mt={{ sm: '0px', md: '90px' }}><EmailIcon />{' '}vijay94622@gmail.com (Co-Founder)</Text>
             </HStack>
-            <HStack spacing={2} fontSize={'1.2rem'} w={'70%'}>
+            <HStack spacing={2} fontSize={'1.2rem'} w={[ '100%',  '100%' ]}>
               <Text><EmailIcon />{' '}mmsharma08121997@gmail.com (Co-Founder)</Text>
             </HStack>
           </VStack>
