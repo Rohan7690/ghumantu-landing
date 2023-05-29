@@ -1,12 +1,15 @@
-import { Menu, MenuButton, MenuList, MenuItem, Box, Flex, Link, Text, UnorderedList, ListItem, Image, Button, IconButton, useDisclosure, Stack } from "@chakra-ui/react";
+import {
+    Menu, MenuButton, MenuList, MenuItem, Box, Flex, Link, Text,
+    Image, Button,
+    useDisclosure, Stack, StatDownArrow
+} from "@chakra-ui/react";
 import React, { useState, useEffect, useRef } from 'react';
-import { AiOutlineDown, AiFillCloseCircle, AiOutlineUp } from "react-icons/ai";
+import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
 import {
     Drawer,
     DrawerOverlay,
     DrawerContent,
     DrawerCloseButton,
-    DrawerHeader,
     DrawerBody,
 } from '@chakra-ui/react';
 import { BsBellFill } from "react-icons/bs";
@@ -16,152 +19,49 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 const Navbar = () => {
     const btnRef = useRef()
     const [hamServiceToggle, setHamServiceToggle] = useState(false)
-
-
     const { isOpen, onOpen, onClose } = useDisclosure();
-    const [isMobile, setIsMobile] = useState(false);
-
-    const handleResize = () => {
-        if (window.innerWidth <= 1008) {
-            setIsMobile(true);
-        } else {
-            setIsMobile(false);
-        }
-    };
-
-    useEffect(() => {
-        window.addEventListener('resize', handleResize);
-        handleResize();
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
 
     return (
-        // <Box as="nav" color="white" borderRadius={"20%"} position={"sticky"} top={['0', '0', '10']} zIndex={"10"} >
-        //     <Flex alignItems="center" px={{ sm: '20px' }} justifyContent={['space-between']} backdropFilter={"blur(20px)"} backgroundColor={"hsla(0,0%,100%,.5)"} margin={"0 auto"} h={"80px"} gap={"60px"} width={{ base: "100%", md: '100%', lg: '80%', xl: '55%' }} borderRadius={{ sm: "0px", md: "0px", lg: "100px", xl: '100px' }} borderBottom={"2px solid hsla(0,0%,79%,.8)"}>
-        //         <Box>
-        //             <Text fontSize="xl" fontWeight="bold">
-        //                 <Image src="landing-page/logoNav.png" w={"4rem"} h={"3.5rem"} />
-        //             </Text>
-        //         </Box>
-        //         <Box>
-        //             {isMobile ? (
-
-        //                 <IconButton
-        //                     icon={<HamburgerIcon />}
-        //                     size="md"
-        //                     aria-label="Open menu"
-        //                     onClick={onOpen}
-        //                     variant="ghost"
-        //                     color={'black'}
-
-        //                 />
-        //             ) : (
-        //                 <UnorderedList display={"flex"} alignItems={'center'} gap={"60px"} listStyleType={"none"} >
-        //                     <ListItem >
-        //                         <Link href="/" style={{ textDecoration: "none" }} color={"black"}>
-        //                             Home
-        //                         </Link>
-        //                     </ListItem>
-
-        //                     <ListItem >
-        //                         <Menu>
-        //                             <MenuButton mr={"10px"} color={"black"}>
-        //                                 Services
-        //                             </MenuButton>
-        //                             <MenuList mt={'20px'} backgroundColor={"#fff"} dropShadow={"0 8px 16px 0 rgba(0,0,0,.2)"}>
-        //                                 <MenuItem background={"white"} border={'none'}>
-        //                                     <Link fontSize={"1rem"} color={"#666"} style={{ textDecoration: "none" }} href="/">Budget Planner</Link>
-        //                                 </MenuItem>
-        //                                 <MenuItem background={"white"} border={'none'}>
-        //                                     <Link fontSize={"1rem"} color={"#666"} style={{ textDecoration: "none" }} href="/">Route Mapping</Link>
-        //                                 </MenuItem>
-        //                                 <MenuItem background={"white"} border={'none'} >
-        //                                     <Link fontSize={"1rem"} color={"#666"} style={{ textDecoration: "none" }} href="/">Local Search Engine</Link>
-        //                                 </MenuItem>
-        //                             </MenuList>
-        //                         </Menu>
-
-        //                     </ListItem>
-
-        //                     <ListItem>
-        //                         <Link style={{ textDecoration: "none" }} href="#" color={"black"}>
-        //                             About
-        //                         </Link>
-        //                     </ListItem>
-
-        //                     <ListItem>
-        //                         <Link href="#" style={{ textDecoration: "none" }} color={"black"} >
-        //                             Contact Us
-        //                         </Link>
-        //                     </ListItem>
-        //                     <ListItem>
-        //                         <Button border={"none"} fontSize={"18px"} fontWeight={"bold"} fontFamily={"sans-serif"} width={"10rem"} h={"3rem"} color={"white"} borderRadius={"100px"} background={"linear-gradient(93.01deg,#14cdff .65%,#00c2ff)"}>
-        //                             Notify Me
-        //                         </Button>
-        //                     </ListItem>
-        //                 </UnorderedList>
-        //             )}
-        //             <Drawer placement="right" onClose={onClose} isOpen={isOpen}>
-        //                 <DrawerOverlay>
-        //                     <DrawerContent>
-        //                         <DrawerCloseButton />
-        //                         <DrawerHeader>Menu</DrawerHeader>
-        //                         <DrawerBody>
-        //                             <Box as="span" display="block" marginBottom={4}>
-        //                                 Home
-        //                             </Box>
-        //                             <Box as="span" display="block" marginBottom={4}>
-        //                                 About
-        //                             </Box>
-        //                             <Menu>
-        //                                 <MenuButton mr={"10px"} color={"black"}>
-        //                                     Services
-        //                                 </MenuButton>
-        //                                 <MenuList backgroundColor={"#fff"} dropShadow={"0 8px 16px 0 rgba(0,0,0,.2)"}>
-        //                                     <MenuItem background={"white"} border={'none'}>
-        //                                         <Link fontSize={"1rem"} color={"#666"} style={{ textDecoration: "none" }} href="/">Budget Planner</Link>
-        //                                     </MenuItem>
-        //                                     <MenuItem background={"white"} border={'none'}>
-        //                                         <Link fontSize={"1rem"} color={"#666"} style={{ textDecoration: "none" }} href="/">Route Mapping</Link>
-        //                                     </MenuItem>
-        //                                     <MenuItem background={"white"} border={'none'} >
-        //                                         <Link fontSize={"1rem"} color={"#666"} style={{ textDecoration: "none" }} href="/">Local Search Engine</Link>
-        //                                     </MenuItem>
-        //                                 </MenuList>
-        //                             </Menu>
-        //                             <Box as="span" display="block" marginBottom={4}>
-        //                                 Contact
-        //                             </Box>
-        //                         </DrawerBody>
-        //                     </DrawerContent>
-        //                 </DrawerOverlay>
-        //             </Drawer>
-        //         </Box>
-        //     </Flex>
-        // </Box>
         <>
-            <Flex w={['100%', '100%', '50%']} backdropFilter={"blur(20px)"} p={'1rem'} backgroundColor={"hsla(0,0%,100%,.5)"} margin={"0 auto"} h={"80px"} gap={"60px"}  borderRadius={{ sm: "0px", md: "0px", lg: "100px"}} borderBottom={"2px solid hsla(0,0%,79%,.8)"} mx='auto' justifyContent='space-between' color="white"  position={"sticky"} top={['0', '0', '10']} zIndex={"10"}>
+            <Flex w={['100%', '100%', '50%']} backdropFilter={"blur(20px)"}
+                px={'2'} py={'4'}
+                backgroundColor={"hsla(0,0%,100%,.5)"}
+                h={"100%"}
+                gap={"5"}
+                borderRadius={['none', 'none', 'full']}
+                borderBottom={"2px solid hsla(0,0%,79%,.8)"}
+                mx='auto'
+                justifyContent='space-between'
+                position={"sticky"} top={['0', '0', '10']}
+                zIndex={"10"}>
                 {/* Logo (Left Section) */}
-                <Box >
-                    <Image src="landing-page/logoNav.png" w={"4.2rem"} h={"3.3rem"} />
-                </Box>
-                {/* Links (Right Section) */}
+                <Flex justifyContent='center' alignItems='center'>
+                    <Box w='3rem' h='3rem'>
+                        <Image objectFit='contain' src="landing-page/logoNav.png" />
+                    </Box>
+                </Flex>
                 <Flex w='100%' alignItems='center' justifyContent='flex-end' >
-                    {/* Other Desktop options */}
-                    {/* Hamburger */}
-                    <Box display={['block', 'block', 'none']}>
+                    <Box display={['block', 'block', 'none']} mx={5}>
                         <HamburgerIcon
+                            color={"#14cdff"}
                             onClick={onOpen}
                         />
                     </Box>
-                    <Flex  w='100%' display={['none', 'none', 'flex']} gap={5}>
-                        <Flex alignItems='center' w='100%' justifyContent='center' gap={'20'}>
-                            <Link href="/" style={{ textDecoration: "none" }} color={"black"}>
+                    <Flex w='100%' display={['none', 'none', 'flex']} gap={5}>
+                        <Flex alignItems='center' w='100%' justifyContent='center' gap={'10'}>
+                            <Text>
                                 Home
-                            </Link>
+                            </Text>
                             <Menu>
                                 <MenuButton color={"black"}>
-                                    Services
+                                    <Flex alignItems='center' gap={2}>
+                                        <Text>
+                                            Services
+                                        </Text>
+                                        <Box mt={0}>
+                                            <StatDownArrow color="#14cdff" />
+                                        </Box>
+                                    </Flex>
                                 </MenuButton>
                                 <MenuList backgroundColor={"#fff"} dropShadow={"0 8px 16px 0 rgba(0,0,0,.2)"}>
                                     <MenuItem background={"white"} border={'none'}>
@@ -175,15 +75,26 @@ const Navbar = () => {
                                     </MenuItem>
                                 </MenuList>
                             </Menu>
-                            <Link style={{ textDecoration: "none" }} href="#" color={"black"}>
+                            <Text>
                                 About
-                            </Link>
-                            <Link href="#" style={{ textDecoration: "none" }} color={"black"} >
+                            </Text>
+                            <Text color={"black"} >
                                 Contact Us
-                            </Link>
+                            </Text>
                         </Flex>
                         <Box>
-                            <Button border={"none"} fontSize={"18px"} fontWeight={"bold"} fontFamily={"sans-serif"} width={"10rem"} h={"3rem"} color={"white"} borderRadius={"100px"} background={"linear-gradient(93.01deg,#14cdff .65%,#00c2ff)"}>
+                            <Button
+                                _hover={{
+                                    background: "linear-gradient(93.01deg,#00c2ff .65%,#14cdff)",
+                                }}
+                                border={"none"}
+                                fontSize={"18px"}
+                                fontWeight={"bold"}
+                                fontFamily={"sans-serif"}
+                                width={"10rem"} h={"3rem"}
+                                color={"white"}
+                                borderRadius={"100px"}
+                                background={"linear-gradient(93.01deg,#14cdff .65%,#00c2ff)"}>
                                 Notify Me
                             </Button>
                         </Box>
