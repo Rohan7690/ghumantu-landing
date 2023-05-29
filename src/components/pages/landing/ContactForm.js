@@ -22,10 +22,13 @@ const ContactForm = () => {
       mx={'auto'}
       my="10"
     >
-      <Flex flexDir={{ sm: 'column', md: 'row', lg: 'row' }}>
+      <Flex flexDir={['column', 'column', 'row']}>
         <Box width={{ sm: '100%', lg: '50%' }} >
           <VStack spacing={4} align="start">
-            <Heading as="h2" fontSize={{ sm: '2rem', md: '3rem' }} >
+            <Heading as="h2"
+              mx='auto'
+              textAlign={['center', 'center', 'left']}
+              fontSize={'24px'} >
               Get notified when we{' '}<br />
               <Text as="span" color={"#19b6e0"}>
                 launch!
