@@ -19,7 +19,7 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 const Navbar = () => {
     const btnRef = useRef()
     const [hamServiceToggle, setHamServiceToggle] = useState(false)
-    const { isOpen, onOpen, onClose } = useDisclosure();
+    const { isOpen, onOpen, onClose } = useDisclosure()
 
     return (
         <>
