@@ -140,13 +140,13 @@ const Navbar = () => {
         //     </Flex>
         // </Box>
         <>
-            <Flex w={['100%', '100%', '60%']} mx='auto' justifyContent='space-between'>
+            <Flex w={['100%', '100%', '50%']} backdropFilter={"blur(20px)"} p={'1rem'} backgroundColor={"hsla(0,0%,100%,.5)"} margin={"0 auto"} h={"80px"} gap={"60px"}  borderRadius={{ sm: "0px", md: "0px", lg: "100px"}} borderBottom={"2px solid hsla(0,0%,79%,.8)"} mx='auto' justifyContent='space-between' color="white"  position={"sticky"} top={['0', '0', '10']} zIndex={"10"}>
                 {/* Logo (Left Section) */}
-                <Box bg='red.200'>
-                    <Image src="landing-page/logoNav.png" w={"4rem"} h={"3.5rem"} />
+                <Box >
+                    <Image src="landing-page/logoNav.png" w={"4.2rem"} h={"3.3rem"} />
                 </Box>
                 {/* Links (Right Section) */}
-                <Flex w='100%' alignItems='center' justifyContent='flex-end'>
+                <Flex w='100%' alignItems='center' justifyContent='flex-end' >
                     {/* Other Desktop options */}
                     {/* Hamburger */}
                     <Box display={['block', 'block', 'none']}>
@@ -154,14 +154,27 @@ const Navbar = () => {
                             onClick={onOpen}
                         />
                     </Box>
-                    <Flex bg='green.300' w='100%' display={['none', 'none', 'flex']} gap={5}>
-                        <Flex alignItems='center' w='100%' justifyContent='center' gap={'5'}>
+                    <Flex  w='100%' display={['none', 'none', 'flex']} gap={5}>
+                        <Flex alignItems='center' w='100%' justifyContent='center' gap={'20'}>
                             <Link href="/" style={{ textDecoration: "none" }} color={"black"}>
                                 Home
                             </Link>
-                            <Link href="#" style={{ textDecoration: "none" }} color={"black"} >
-                                Services
-                            </Link>
+                            <Menu>
+                                <MenuButton color={"black"}>
+                                    Services
+                                </MenuButton>
+                                <MenuList backgroundColor={"#fff"} dropShadow={"0 8px 16px 0 rgba(0,0,0,.2)"}>
+                                    <MenuItem background={"white"} border={'none'}>
+                                        <Link fontSize={"1rem"} color={"#666"} style={{ textDecoration: "none" }} href="/">Budget Planner</Link>
+                                    </MenuItem>
+                                    <MenuItem background={"white"} border={'none'}>
+                                        <Link fontSize={"1rem"} color={"#666"} style={{ textDecoration: "none" }} href="/">Route Mapping</Link>
+                                    </MenuItem>
+                                    <MenuItem background={"white"} border={'none'} >
+                                        <Link fontSize={"1rem"} color={"#666"} style={{ textDecoration: "none" }} href="/">Local Search Engine</Link>
+                                    </MenuItem>
+                                </MenuList>
+                            </Menu>
                             <Link style={{ textDecoration: "none" }} href="#" color={"black"}>
                                 About
                             </Link>

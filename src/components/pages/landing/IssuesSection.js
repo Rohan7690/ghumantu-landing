@@ -17,7 +17,7 @@ const IssuesSection = () => {
   }, [])
 
   return (
-    <Box px={{ sm: '50px', md: '100px', lg: "230px" }} my={"5rem"} data-aos='fade-up'>
+    <Box px={[ '50px', '100px',  "230px" ]} my={"5rem"} data-aos='fade-up'>
       <Flex direction="column" margin={"0 auto"} maxW={"40rem"} textAlign={"center"} mb={"1rem"}>
         <Box alignContent={"center"} justifyContent={"center"} my={"50px"}>
           <Heading as="h2" color="black" fontSize={"2rem"} alignContent={"center"} >
@@ -56,7 +56,7 @@ const IssuesSection = () => {
             transform: "translateY(-5px)",
             transition: "all .2s ease-in-out",
           }}
-          width={"380px"} height={"300px"} flexDir={{ sm: 'column-reverse', md: 'column-reverse', lg: 'row' }} backgroundImage={"landing-page/feature_card_bg2.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30px"} pl={"10px"}>
+          width={"380px"} height={"300px"} flexDir={[ 'column-reverse',  'column-reverse',  'row' ]} backgroundImage={"landing-page/feature_card_bg2.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30px"} pl={"10px"}>
           <Image
             width="72px"
             height="72px"

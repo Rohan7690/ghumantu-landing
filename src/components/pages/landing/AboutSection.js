@@ -32,11 +32,11 @@ const AboutSection = () => {
         </Heading>
         <Text fontSize={"1.3rem"}>Plan your perfect itinerary and explore the world effortlessly with Ghumantu, your ultimate travel planning tool.</Text>
       </Box>
-      <Flex maxW={"85rem"} margin={"0 auto"} flexDir={{ sm: 'column', md: 'column', lg: 'row' }}>
+      <Flex maxW={"85rem"} margin={"0 auto"} flexDir={['column',  'column', 'row' ]}>
         <Box>
           <Image
-            width={{ sm: '470px', md: '500px', lg: "630px" }}
-            height={{ sm: '400px', md: '400px', lg: "758px" }}
+            width={['470px','500px',  "630px" ]}
+            height={[ '400px',  '400px',  "758px" ]}
             src="landing-page/about-img.jpg"
             alt='about-img'
             borderRadius={"5%"}
@@ -44,7 +44,7 @@ const AboutSection = () => {
             m={"2rem"}
           />
         </Box>
-        <Box w={{ sm: '100%', md: '80%', lg: "50%" }} py={"4rem"} px={{ sm: '20px', md: '50px', lg: "100px" }}>
+        <Box w={['100%',  '80%',  "50%" ]} py={"4rem"} px={[ '20px',  '50px',  "100px" ]}>
           <Heading as="h3" fontSize={"1.8rem"} py={"20px"}>
             Why Choose Us
           </Heading>
@@ -71,8 +71,8 @@ const AboutSection = () => {
           </Box>
         </Box>
       </Flex>
-      <Flex maxW={"85rem"} margin={"0 auto"} py={"4rem"} px={{ sm: '20px', md: '50px', lg: "100px" }} flexDir={{ sm: 'column', md: 'row', lg: 'row' }}>
-        <Box w={{ sm: '100%', md: '80%', lg: "50%" }} m={"auto 0"} lineHeight={"2rem"}>
+      <Flex maxW={"85rem"} margin={"0 auto"} py={"4rem"} px={['20px',  '50px',  "100px" ]} flexDir={ [ 'column',  'row',  'row' ]}>
+        <Box w={['100%',  '80%',  "50%" ]} m={"auto 0"} lineHeight={"2rem"}>
           <Heading as="h2" py={"20px"}>
             Our Vision
           </Heading>
@@ -81,8 +81,8 @@ const AboutSection = () => {
         <Box >
           <Image
             objectFit={"contain"}
-            width={{ sm: '400px', md: '500px', lg: "648" }}
-            height={{ sm: '400px', md: '400px', lg: "550px" }}
+            width={[ '400px',  '500px',  "648" ]}
+            height={[ '400px',  '400px',  "550px" ]}
             src="landing-page/about_who_we.png"
             alt=""
           />
