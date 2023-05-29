@@ -3,7 +3,7 @@ import { Box, Heading, Flex, Text, Image } from "@chakra-ui/react";
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import React, { useEffect } from "react";
-const listitem  = [
+const listitem = [
   {
     Itemimg: '',
     ItemHeading: '',
@@ -31,7 +31,7 @@ const IssuesSection = () => {
           </Text>
         </Box>
       </Flex>
-      <Flex color={"#666"} gap={"30"} lineHeight={"30px"} flexDir={{ sm: 'column', md: 'column', lg: 'row' }}>
+      <Flex color={"#666"} gap={"30"} lineHeight={"30px"} flexDir={['column', 'column', 'row']}>
         <Box
           _hover={{
             boxShadow: "0 0 10px 0 rgba(0,0,0,.1)",
