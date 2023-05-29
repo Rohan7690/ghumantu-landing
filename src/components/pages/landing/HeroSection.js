@@ -12,13 +12,13 @@ import Textra from "react-textra";
 function HeroSection() {
     return (
         <Box w={'100%'}
-            background={{ sm: 'landing-page/hero-bg-mobile.png', md: "linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #D0FCFF 100%)", lg: "linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #D0FCFF 100%)" }} px={{ sm: '10px', md: '50px', lg: "80px", xl: '120px' }}
+            background={{ base: 'landing-page/hero-bg-mobile.png', md: "linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #D0FCFF 100%)", lg: "linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #D0FCFF 100%)" }} px={{ base: '10px', md: '50px', lg: "80px", xl: '120px' }}
         >
         <Box w={['100%', '100%', '85%']}
             mx={'auto'}>
-        <Flex  py={"15px"} flexDir={{ sm: 'column', md: 'column', lg: 'row' }}>
-                <Flex flexDirection="column" justifyContent={"center"} width={{ sm: "100%", md: '100%', lg: '50%' }} mt={{ md: '20px' }} fontFamily={"sans-serif"}>
-                    <Heading as="h1" color="black" fontWeight={"bold"} fontSize={{ sm: '30px', md: '48px', lg: '50px' }}>
+        <Flex  py={"15px"} flexDir={{ base: 'column', md: 'column', lg: 'row' }}>
+                <Flex flexDirection="column" justifyContent={"center"} width={{ base: "100%", md: '100%', lg: '50%' }} mt={{ md: '20px' }} fontFamily={"sans-serif"}>
+                    <Heading as="h1" color="black" fontWeight={"bold"} fontSize={{ base: '30px', md: '48px', lg: '50px' }}>
                         <Text as="span" display="inline-block" color={"#19b6e0"}>
                             <Textra
                                 data={['Build', 'Organize', 'Customize']}
@@ -37,11 +37,11 @@ function HeroSection() {
                         Notify Me
                     </Button>
                 </Flex>
-                <Box width={{ sm: '70%', md: '90%', lg: "50%" }}>
+                <Box width={{ base: '70%', md: '90%', lg: "50%" }}>
                     <Image
                         alt="hero.png"
-                        w={{ sm: '2000px', md: '2000px', lg: '672px' }}
-                        height={{ sm: '800px', md: '1000px', lg: '680px' }}
+                        w={{ base: '2000px', md: '2000px', lg: '672px' }}
+                        height={{ base: '800px', md: '1000px', lg: '680px' }}
                         src="/landing-page/hero.png"
                     />
                 </Box>
