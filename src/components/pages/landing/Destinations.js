@@ -85,7 +85,7 @@ const Destinations = () => {
   return (
 
     <Box w={['100%', '100%', '85%']}
-      mx={'auto'} p={['1rem','2rem','0']}
+      mx={'auto'} p={['1rem', '2rem', '0']}
     >
       <Text as={'div'} align={"center"}>
         <Heading as={'h2'} my={'20px'} fontSize={"2rem"}>Most Vistited{' '}<Text as={'span'} color={"#19b6e0"}>Destinations</Text> </Heading>
@@ -119,27 +119,27 @@ const Destinations = () => {
                 src={destination?.img.src} alt="card image" />
             </Box>
             {/* //--------------------------------- Destination Card tags --------------------------- */}
-            <Box position='absolute' left='0.5rem' top='1rem' width='90%'>
-              <Flex
-                justifyContent={'space-between'}
-                alignItems='center'
-                flexWrap={'wrap'}
+            <Box position='absolute' left='0.5rem' top='1rem' width='95%'>
+              <Stack
+                direction={'row'}
+                justify={'space-between'}
+                align='center'
                 py={'0.2rem'}
                 px={'0'}
                 w={'100%'}>
-                <Tag
-                  fontSize='lg'
-                  py={'0.8rem'} px={'1.5rem'}
-                  borderRadius={'2.4rem'}>
-                  <TagLabel>Exclusive ⚡</TagLabel>
-                </Tag>
-                <Tag
-                  fontSize='lg'
-                  py={'0.8rem'} px={'1.5rem'}
-                  borderRadius={'2.4rem'}>
-                  <TagLabel>Verified</TagLabel>
-                  <TagRightIcon as={GoVerified} />
-                </Tag>
+                <Stack direction={'row'} spacing={2}>
+                  <Tag
+                    size={"lg"}
+                    borderRadius={'2.4rem'}>
+                    <TagLabel>Exclusive ⚡</TagLabel>
+                  </Tag>
+                  <Tag
+                    size={"lg"}
+                    borderRadius={'2.4rem'}>
+                    <TagLabel>Verified</TagLabel>
+                    <TagRightIcon as={GoVerified} />
+                  </Tag>
+                </Stack>
                 <Button borderRadius={'100%'}
                   onClick={() => {
                     setWish(!wish);
@@ -152,7 +152,7 @@ const Destinations = () => {
                     <AiOutlineHeart className="blue destination_Card_WishlistBtn" />
                   )}
                 </Button>
-              </Flex>
+              </Stack>
             </Box>
             {/* //--------------------------------- Destination Card Content --------------------------- */}
             <Box className="destination_CardContent" m='1rem'>
