@@ -113,12 +113,12 @@ const Navbar = () => {
                 <DrawerContent>
                     <DrawerCloseButton size='lg' />
                     <DrawerBody bgColor='#ddf8ff'
-                        pt='24'
+                        pt='40px'
                         display='flex'
                         justifyContent='center'
                         alignItems='flex-start'
-                        fontSize='5xl' fontWeight='semibold'>
-                        <Stack spacing={12}>
+                        fontSize='2xl' fontWeight='semibold'>
+                        <Stack spacing={5}>
                             <Stack onClick={() => {
                                 route.push('/')
                             }}>
@@ -137,8 +137,8 @@ const Navbar = () => {
                                     }
                                 </Stack>
                                 {hamServiceToggle &&
-                                    <Stack fontSize='4xl'>
-                                        <Stack spacing={5} ml="4" fontWeight='light'>
+                                    <Stack fontSize='xl'>
+                                        <Stack spacing={2} ml="4" fontWeight='light'>
                                             <Text as={Link} onClick={() => {
                                                 document.getElementById("budget").scrollIntoView({ behavior: "smooth" })
                                                 onClose()

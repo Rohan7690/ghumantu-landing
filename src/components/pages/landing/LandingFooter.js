@@ -119,13 +119,13 @@ const LandingFooter = () => {
         <Image src={"landing-page/footerLogo.png"} alt="logo" />
       </Stack>
       <Stack justify='center' align='center'>
-        <Text fontSize='2xl' w='100%' textAlign='center' color='#fff'>
+        <Text fontSize={['15px', '24px', '25px']} w='100%' textAlign='center' color='#fff'>
           Plan a perfect adventure with our travel planning tool
         </Text>
       </Stack>
       <Stack direction={['column', 'column', 'row']} spacing={10}
         justify='center'
-        fontSize={['md', 'md', 'xl']}
+        fontSize={['15px', '24px', '25px']}
         // put a line after each element
         __css={{
           '& > * + *': {

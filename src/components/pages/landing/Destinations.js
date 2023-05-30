@@ -88,8 +88,8 @@ const Destinations = () => {
       mx={'auto'}
     >
       <Text as={'div'} align={"center"}>
-        <Heading as={'h2'} my={'20px'}>Most Vistited{' '}<Text as={'span'} color={"#19b6e0"}>Destinations</Text> </Heading>
-        <Text as={'p'} fontSize={'1.2rem'} color={"#666"}> Some of the most loved itineraries by our travelers, and sooner you'll able to experience the essence of traveling with us.</Text>
+        <Heading as={'h2'} my={'20px'} fontSize={['30px', '48px', '50px']}>Most Vistited{' '}<Text as={'span'} color={"#19b6e0"}>Destinations</Text> </Heading>
+        <Text as={'p'} fontSize={['15px', '24px', '25px']} color={"#666"}> Some of the most loved itineraries by our travelers, and sooner you'll able to experience the essence of traveling with us.</Text>
       </Text>
       <Flex flexDir={['column', 'column', 'row']}
         gap={'5'}
@@ -165,7 +165,7 @@ const Destinations = () => {
               >
                 {destination?.heading}
               </Text>
-              <Box className="destination_Card--para" h='220px' fontSize={'20px'}>{destination?.desc}</Box>
+              <Box className="destination_Card--para" h='220px' fontSize={['15px', '20px', '20px']}>{destination?.desc}</Box>
               {/* //--------------------------------- Card info stats --------------------------- */}
               <Flex
                 color='#666666'
@@ -192,7 +192,7 @@ const Destinations = () => {
               </Flex>
               {/* //--------------------------------- Card CTA --------------------------- */}
               <Box>
-                <button className="btn" style={{ width: '90%' }}>
+                <button className="btn btn-getStarted" style={{ width: '90%' }}>
                   Notify Me
                 </button>
               </Box>

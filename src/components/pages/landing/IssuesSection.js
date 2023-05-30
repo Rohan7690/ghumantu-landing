@@ -23,13 +23,13 @@ const IssuesSection = () => {
       my="10" data-aos='fade-up'>
       <Flex direction="column" margin={"0 auto"} maxW={"40rem"} textAlign={"center"} mb={"1rem"}>
         <Box alignContent={"center"} justifyContent={"center"} my={"2rem"}>
-          <Heading as="h2" color="black" fontSize={"2rem"} alignContent={"center"} >
+          <Heading as="h2" color="black" fontSize={['30px', '48px', '50px']} alignContent={"center"} >
             <Box color={"#19b6e0"} display={"inline"} mr={"10px"} >
               Issues
             </Box>
             Encountered By Travellers
           </Heading>
-          <Text color={"#666"} fontSize={"1.2rem"}>
+          <Text color={"#666"} fontSize={['15px', '20px', '25px']}>
             Common Issues faced by travelers throughout the course of their trip from the planning stages to the end of their journey
           </Text>
         </Box>
@@ -42,7 +42,7 @@ const IssuesSection = () => {
             transform: "translateY(-5px)",
             transition: "all .2s ease-in-out",
           }}
-          width={"380px"} height={"300px"} backgroundImage={"landing-page/feature_card_bg1.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30"} pl={"10px"}>
+          width={['100%','380px',"380px"]} height={['100%','300px',"300px"]} backgroundImage={"landing-page/feature_card_bg1.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30"} pl={"10px"}>
           <Image
             width="72px"
             height="72px"
@@ -61,7 +61,7 @@ const IssuesSection = () => {
             transform: "translateY(-5px)",
             transition: "all .2s ease-in-out",
           }}
-          width={"380px"} height={"300px"} flexDir={['column-reverse', 'column-reverse', 'row']}
+          width={['100%','380px',"380px"]} height={['100%','300px',"300px"]} flexDir={['column-reverse', 'column-reverse', 'row']}
           backgroundImage={"landing-page/feature_card_bg2.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30px"} pl={"10px"}>
           <Image
             width="72px"
@@ -81,7 +81,7 @@ const IssuesSection = () => {
             transform: "translateY(-5px)",
             transition: "all .2s ease-in-out",
           }}
-          width={"380px"} height={"300px"} backgroundImage={"landing-page/feature_card_bg3.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30"} pl={"10px"}>
+          width={['100%','380px',"380px"]} height={['100%','300px',"300px"]} backgroundImage={"landing-page/feature_card_bg3.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30"} pl={"10px"}>
           <Image
             width="72px"
             height="72px"

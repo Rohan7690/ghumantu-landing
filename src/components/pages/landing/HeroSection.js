@@ -28,7 +28,7 @@ function HeroSection() {
                             <br />
                             A Journey that<br /> Reflects your style
                         </Heading>
-                        <Text fontStyle={"normal"} fontSize={"1.3rem"} opacity={"0.6"} lineHeight={"2rem"} letterSpacing={".0125em"} width={"80%"} my={"2rem"} >
+                        <Text fontStyle={"normal"} fontSize={['15px', '24px', '25px']} opacity={"0.6"} lineHeight={"2rem"} letterSpacing={".0125em"} width={"80%"} my={"2rem"} >
                             Plan a journey that matches your preferences, interests, and personality with the help of our user-friendly travel planning tool.
                         </Text>
                         <Button
