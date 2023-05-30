@@ -22,7 +22,7 @@ const IssuesSection = () => {
       mx={'auto'}
       my="10" data-aos='fade-up'>
       <Flex direction="column" margin={"0 auto"} maxW={"40rem"} textAlign={"center"} mb={"1rem"}>
-        <Box alignContent={"center"} justifyContent={"center"} my={"50px"}>
+        <Box alignContent={"center"} justifyContent={"center"} my={"2rem"}>
           <Heading as="h2" color="black" fontSize={"2rem"} alignContent={"center"} >
             <Box color={"#19b6e0"} display={"inline"} mr={"10px"} >
               Issues
@@ -36,6 +36,7 @@ const IssuesSection = () => {
       </Flex>
       <Flex color={"#666"} gap={"30"} lineHeight={"30px"} flexDir={['column', 'column', 'row']}>
         <Box
+          mx='auto'
           _hover={{
             boxShadow: "0 0 10px 0 rgba(0,0,0,.1)",
             transform: "translateY(-5px)",
@@ -54,12 +55,14 @@ const IssuesSection = () => {
           </Box>
         </Box>
         <Box
+          mx='auto'
           _hover={{
             boxShadow: "0 0 10px 0 rgba(0,0,0,.1)",
             transform: "translateY(-5px)",
             transition: "all .2s ease-in-out",
           }}
-          width={"380px"} height={"300px"} flexDir={['column-reverse', 'column-reverse', 'row']} backgroundImage={"landing-page/feature_card_bg2.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30px"} pl={"10px"}>
+          width={"380px"} height={"300px"} flexDir={['column-reverse', 'column-reverse', 'row']}
+          backgroundImage={"landing-page/feature_card_bg2.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30px"} pl={"10px"}>
           <Image
             width="72px"
             height="72px"
@@ -72,6 +75,7 @@ const IssuesSection = () => {
           </Box>
         </Box>
         <Box
+          mx='auto'
           _hover={{
             boxShadow: "0 0 10px 0 rgba(0,0,0,.1)",
             transform: "translateY(-5px)",
