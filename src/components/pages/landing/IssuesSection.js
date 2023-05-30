@@ -49,7 +49,7 @@ const IssuesSection = () => {
             src="landing-page/feature_card_budget.png"
             alt="budget_img"
           />
-          <Box mt={"20px"} fontSize={"1.1rem"}>
+          <Box mt={"20px"} fontSize={['15px', '24px', '25px']}>
             The whole travel experience gets disheartening when you can't make the plans according to your budget and do not able to find any option where you can plan your trip along with
             <Text color={"#19b6e0"} display={"inline"}> budget calculation</Text>
           </Box>
@@ -69,7 +69,7 @@ const IssuesSection = () => {
             src="landing-page/feature_card_route.png"
             alt="route_img"
           />
-          <Box mt={"20px"} fontSize={"1.1rem"} as='p' >
+          <Box mt={"20px"} fontSize={['15px', '24px', '25px']} as='p' >
             Whenever we plan a trip to a new place, we all want to know the best tourist destinations of that place but do not able to get the right placements of the destinations on a
             <Text as='span' color={"#19b6e0"} display={"inline"}> single route</Text>.
           </Box>
@@ -88,7 +88,7 @@ const IssuesSection = () => {
             src="landing-page/feature_card_local.png"
             alt="local_img"
           />
-          <Box mt={"20px"} fontSize={"1.1rem"}>
+          <Box mt={"20px"} fontSize={['15px', '24px', '25px']}>
             Exploring the authentic local food, activities, and places is a vital part of any travel experience, but it can be challenging to find reliable information even from the most{" "}
             <Text color={"#19b6e0"} display={"inline"}>knowledgeable place</Text>.
           </Box>

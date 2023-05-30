@@ -23,7 +23,7 @@ const aboutFeatures = [
 
 const AboutSection = () => {
   return (
-    <Box background={"#19b6e0"} textColor={"white"} py={"4rem"} >
+    <Box background={"#19b6e0"} textColor={"white"} py={['1rem','4rem',"4rem"]} >
       <Box w={['100%', '100%', '85%']}
         mx={'auto'}>
         <Box textAlign={"center"} my={"2rem"}>
@@ -44,11 +44,11 @@ const AboutSection = () => {
               m={['0', '0', "2rem"]}
             />
           </Box>
-          <Box w={['100%', '80%', "50%"]} py={"4rem"} px={['20px', '50px', "100px"]}>
+          <Box w={['100%', '80%', "50%"]} py={['1rem','4rem',"4rem"]} px={['20px', '50px', "100px"]}>
             <Heading as="h3" fontSize={['30px', '48px', '50px']} py={"20px"}>
               Why Choose Us
             </Heading>
-            <Text fontSize={['15px', '24px', '25px']} lineHeight={"2rem"}>Ghumantu offers a curated travel experience that allows you to create your own itinerary on any budget. Our platform provides reliable information on local food, activities, and places, and our trip budget calculator helps you plan the perfect budget for your dream trip.</Text>
+            <Text fontSize={['15px', '24px', '25px']} lineHeight={['1.2rem','2rem',"2rem"]}>Ghumantu offers a curated travel experience that allows you to create your own itinerary on any budget. Our platform provides reliable information on local food, activities, and places, and our trip budget calculator helps you plan the perfect budget for your dream trip.</Text>
             <Box >
               {aboutFeatures.map((feature, index) => (
                 <Flex my={"1.8rem"} key={index} >
@@ -64,19 +64,19 @@ const AboutSection = () => {
                     <Heading as="h4" fontSize={"1.3rem"} mb={"0"}>
                       {feature.heading}
                     </Heading>
-                    <Text fontSize={['15px', '24px', '25px']} mt={"4"}>{feature.description}</Text>
+                    <Text fontSize={['13px', '24px', '25px']} lineHeight={['1.2rem','2rem',"2rem"]} mt={['2','2',"4"]}>{feature.description}</Text>
                   </Box>
                 </Flex>
               ))}
             </Box>
           </Box>
         </Flex>
-        <Flex maxW={"85rem"} margin={"0 auto"} py={"4rem"} px={['20px', '50px', "100px"]} flexDir={['column', 'row', 'row']}>
+        <Flex maxW={"85rem"} margin={"0 auto"} py={['1rem','4rem',"4rem"]} px={['20px', '50px', "100px"]} flexDir={['column', 'row', 'row']}>
           <Box w={['100%', '80%', "50%"]} m={"auto 0"} lineHeight={"2rem"}>
             <Heading as="h2" fontSize={['30px', '48px', '50px']} py={"20px"}>
               Our Vision
             </Heading>
-            <Text w={"80%"} fontSize={['15px', '24px', '25px']}>Our goal is to empower travelers to explore the world in a way that is meaningful, transformative, and fulfilling. Whether you're looking to discover hidden gems off the beaten path, connect with locals and experience new cultures firsthand, or simply relax and unwind in a beautiful destination, we are here to help you make it happen. So why wait? Start planning your next adventure today, and let us help you make your travel dreams a reality.</Text>
+            <Text w={['100%','100%',"80%"]} fontSize={['15px', '24px', '25px']} lineHeight={['1.2rem','2rem',"2rem"]}>Our goal is to empower travelers to explore the world in a way that is meaningful, transformative, and fulfilling. Whether you're looking to discover hidden gems off the beaten path, connect with locals and experience new cultures firsthand, or simply relax and unwind in a beautiful destination, we are here to help you make it happen. So why wait? Start planning your next adventure today, and let us help you make your travel dreams a reality.</Text>
           </Box>
           <Box >
             <Image
