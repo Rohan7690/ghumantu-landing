@@ -30,7 +30,7 @@ const AboutSection = () => {
           <Heading as="h2" fontSize={"2rem"}>
             About Us
           </Heading>
-          <Text fontSize={"1.1rem"}>Plan your perfect itinerary and explore the world effortlessly with Ghumantu, your ultimate travel planning tool.</Text>
+          <Text fontSize={["1.1rem",'1.4rem','1.4rem']} py={['0px','10px','20px']}>Plan your perfect itinerary and explore the world effortlessly with Ghumantu, your ultimate travel planning tool.</Text>
         </Box>
         <Flex maxW={"85rem"} margin={"0 auto"} flexDir={['column', 'column', 'row']}>
           <Box>
@@ -76,7 +76,7 @@ const AboutSection = () => {
             <Heading as="h2" fontSize={"2rem"} py={"20px"}>
               Our Vision
             </Heading>
-            <Text w={['100%','100%',"80%"]} fontSize={"1.1rem"} lineHeight={['1.2rem','2rem',"2rem"]}>Our goal is to empower travelers to explore the world in a way that is meaningful, transformative, and fulfilling. Whether you're looking to discover hidden gems off the beaten path, connect with locals and experience new cultures firsthand, or simply relax and unwind in a beautiful destination, we are here to help you make it happen. So why wait? Start planning your next adventure today, and let us help you make your travel dreams a reality.</Text>
+            <Text w={['100%','100%',"80%"]} fontSize={"1.1rem"} lineHeight={['1.2rem','2rem',"2rem"]} >Our goal is to empower travelers to explore the world in a way that is meaningful, transformative, and fulfilling. Whether you're looking to discover hidden gems off the beaten path, connect with locals and experience new cultures firsthand, or simply relax and unwind in a beautiful destination, we are here to help you make it happen. So why wait? Start planning your next adventure today, and let us help you make your travel dreams a reality.</Text>
           </Box>
           <Box >
             <Image

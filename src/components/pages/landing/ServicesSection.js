@@ -19,7 +19,7 @@ const ServicesSection = () => {
           <Heading as="h2" color="black" fontSize={"2rem"} alignContent={"center"} >
             <Text color={"#19b6e0"} display={"inline"} mr={"5px"} >Our Offerings </Text> To The Travelers
           </Heading>
-          <Text color={"#666"} fontSize={"1.2rem"}>
+          <Text color={"#666"} fontSize={"1.2rem"} py={['0px','10px','20px']}>
             We ensure that you'll embark on a perfectly planned, safe vacation at a price you can afford.
           </Text>
         </Box>

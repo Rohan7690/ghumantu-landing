@@ -17,8 +17,9 @@ const IssuesSection = () => {
   }, [])
 
   return (
-    <Box p={['1rem','2rem','0']}
+    <Box
       w={['100%', '100%', '85%']}
+      p={['1rem','2rem','0']}
       mx={'auto'}
       my="10" data-aos='fade-up'>
       <Flex direction="column" margin={"0 auto"} maxW={"40rem"} textAlign={"center"} mb={"1rem"}>
@@ -29,39 +30,39 @@ const IssuesSection = () => {
             </Box>
             Encountered By Travellers
           </Heading>
-          <Text color={"#666"} fontSize={"1.2rem"}>
+          <Text color={"#666"} fontSize={"1.2rem"} py={['0px','10px','20px']}>
             Common Issues faced by travelers throughout the course of their trip from the planning stages to the end of their journey
           </Text>
         </Box>
       </Flex>
       <Flex color={"#666"} gap={"30"} lineHeight={"30px"} flexDir={['column', 'column', 'row']}>
-        <Box py={'2rem'}
-          mx='auto'
+        <Box
+          mx='auto' p={'1rem'}
           _hover={{
             boxShadow: "0 0 10px 0 rgba(0,0,0,.1)",
             transform: "translateY(-5px)",
             transition: "all .2s ease-in-out",
           }}
-          width={['100%','100%',"100%"]} height={['100%','100%',"100%"]} backgroundImage={"landing-page/feature_card_bg1.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30"} pl={"10px"}>
+          width={['100%','100%',"100%"]} height={['100%','100%',"300px"]} backgroundImage={"landing-page/feature_card_bg1.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30"} pl={"10px"}>
           <Image
             width="72px"
             height="72px"
             src="landing-page/feature_card_budget.png"
             alt="budget_img"
           />
-          <Box mt={"20px"} fontSize={"1.1rem"}>
+          <Box mt={"20px"} fontSize={['1rem','1rem',"1.2rem"]}>
             The whole travel experience gets disheartening when you can't make the plans according to your budget and do not able to find any option where you can plan your trip along with
             <Text color={"#19b6e0"} display={"inline"}> budget calculation</Text>
           </Box>
         </Box>
-        <Box py={'2rem'}
-          mx='auto'
+        <Box
+          mx='auto' p={'1rem'}
           _hover={{
             boxShadow: "0 0 10px 0 rgba(0,0,0,.1)",
             transform: "translateY(-5px)",
             transition: "all .2s ease-in-out",
           }}
-          width={['100%','100%',"100%"]} height={['100%','100%',"100%"]} flexDir={['column-reverse', 'column-reverse', 'row']}
+          width={['100%','100%',"100%"]} height={['100%','100%',"300px"]} flexDir={['column-reverse', 'column-reverse', 'row']}
           backgroundImage={"landing-page/feature_card_bg2.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30px"} pl={"10px"}>
           <Image
             width="72px"
@@ -69,26 +70,26 @@ const IssuesSection = () => {
             src="landing-page/feature_card_route.png"
             alt="route_img"
           />
-          <Box mt={"20px"} fontSize={"1.1rem"} as='p' >
+          <Box mt={"20px"} fontSize={['1rem','1rem',"1.2rem"]} as='p' >
             Whenever we plan a trip to a new place, we all want to know the best tourist destinations of that place but do not able to get the right placements of the destinations on a
             <Text as='span' color={"#19b6e0"} display={"inline"}> single route</Text>.
           </Box>
         </Box>
-        <Box py={'2rem'}
-          mx='auto'
+        <Box
+          mx='auto' p={'1rem'}
           _hover={{
             boxShadow: "0 0 10px 0 rgba(0,0,0,.1)",
             transform: "translateY(-5px)",
             transition: "all .2s ease-in-out",
           }}
-          width={['100%','100%',"100%"]} height={['100%','100%',"100%"]} backgroundImage={"landing-page/feature_card_bg3.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30"} pl={"10px"}>
+          width={['100%','100%',"100%"]} height={['100%','100%',"300px"]} backgroundImage={"landing-page/feature_card_bg3.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30"} pl={"10px"}>
           <Image
             width="72px"
             height="72px"
             src="landing-page/feature_card_local.png"
             alt="local_img"
           />
-          <Box mt={"20px"} fontSize={"1.1rem"}>
+          <Box mt={"20px"} fontSize={['1rem','1rem',"1.2rem"]}>
             Exploring the authentic local food, activities, and places is a vital part of any travel experience, but it can be challenging to find reliable information even from the most{" "}
             <Text color={"#19b6e0"} display={"inline"}>knowledgeable place</Text>.
           </Box>

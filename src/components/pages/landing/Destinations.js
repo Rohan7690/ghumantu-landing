@@ -89,11 +89,11 @@ const Destinations = () => {
     >
       <Text as={'div'} align={"center"}>
         <Heading as={'h2'} my={'20px'} fontSize={"2rem"}>Most Vistited{' '}<Text as={'span'} color={"#19b6e0"}>Destinations</Text> </Heading>
-        <Text as={'p'} fontSize={"1.2rem"} color={"#666"}> Some of the most loved itineraries by our travelers, and sooner you'll able to experience the essence of traveling with us.</Text>
+        <Text as={'p'} fontSize={"1.2rem"} my={'20px'} color={"#666"}> Some of the most loved itineraries by our travelers, and sooner you'll able to experience the essence of traveling with us.</Text>
       </Text>
       <Flex flexDir={['column', 'column', 'row']}
-        gap={'5'}
-        justify='center' alignItems='flex-start' wrap={'wrap'} px={{ sm: '50px', md: "100px" }}>
+        gap={'0.2rem'} my={'20px'} justifyContent={'space-evenly'}
+         alignItems='flex-start' wrap={'wrap'} px={['20px', "30px",'30px' ]}>
         {destinations.map((destination, index) => (
           <Flex
             flexDirection={'column'}
@@ -105,7 +105,7 @@ const Destinations = () => {
             borderRadius={'8px'}
             overflow={'hidden'}
             transition={'ease-in'}
-            // height={'670px'}
+            height={'670px'}
             border={'2px solid #dfdfdf'}
             _hover={{
               boxShadow: '0px 0px 7px 0px rgba(0,0,0,0.25)',
@@ -113,7 +113,7 @@ const Destinations = () => {
               transition: 'all 0.3s ease-in-out'
             }}
           >
-            <Box as="div" w='100%' height={'20rem'}>
+            <Box as="div" w='100%' height={'10rem'}>
               <Image width={['inherit']} height={['280px', '300px', '300px']}
                 objectFit='cover'
                 src={destination?.img.src} alt="card image" />
@@ -165,34 +165,34 @@ const Destinations = () => {
               >
                 {destination?.heading}
               </Text>
-              <Box className="destination_Card--para" h='220px' fontSize={['15px', '20px', '20px']}>{destination?.desc}</Box>
+              <Box className="destination_Card--para" h='170px' fontSize={['1rem','1rem','1.2rem']}>{destination?.desc}</Box>
               {/* //--------------------------------- Card info stats --------------------------- */}
               <Flex
                 color='#666666'
                 gap={'30px'}
-                mt={'60px'}
+                my={'15px'}
                 className="destination_CardStats" >
                 <Flex as={'span'}
                   alignItems='center'
                   fontSize={'20px'}
                 >
                   <HiLocationMarker className="destination_CardStats--icon" size={'20px'} />
-                  <Text color='#666666' fontSize={'md'}>{destination.location}</Text>
+                  <Text color='#666666' fontSize={['sm','sm','md']}>{destination.location}</Text>
                 </Flex>
                 <Flex as={'span'} className="destination_CardStats--profiles" flexDir={'row'} alignItems='center'>
                   <MdPeopleAlt size={'20px'} className="destination_CardStats--icon" />{' '}
-                  <Text color='#666666' fontSize={'md'}>
+                  <Text color='#666666' fontSize={['sm','sm','md']}>
                     {destination.people}
                   </Text>
                 </Flex>
                 <Flex as={'span'} className="destination_CardStats--rate" fontSize={'20px'} alignItems='center'>
                   <AiFillStar size={'20px'} className="destination_CardStats--icon yellow" />
-                  <Text color='#666666' fontSize={'md'}>{destination.rating}</Text>
+                  <Text color='#666666' fontSize={['sm','sm','md']}>{destination.rating}</Text>
                 </Flex>
               </Flex>
               {/* //--------------------------------- Card CTA --------------------------- */}
               <Box>
-                <button className="btn btn-getStarted" style={{ width: '90%' }}>
+                <button className="btn btn-getStarted" style={{ width: '90%',marginBottom:'0px' ,marginTop:'0px'}}>
                   Notify Me
                 </button>
               </Box>
