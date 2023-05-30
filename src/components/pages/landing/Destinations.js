@@ -85,11 +85,11 @@ const Destinations = () => {
   return (
 
     <Box w={['100%', '100%', '85%']}
-      mx={'auto'}
+      mx={'auto'} p={['1rem','2rem','0']}
     >
       <Text as={'div'} align={"center"}>
-        <Heading as={'h2'} my={'20px'} fontSize={['30px', '48px', '50px']}>Most Vistited{' '}<Text as={'span'} color={"#19b6e0"}>Destinations</Text> </Heading>
-        <Text as={'p'} fontSize={['15px', '24px', '25px']} color={"#666"}> Some of the most loved itineraries by our travelers, and sooner you'll able to experience the essence of traveling with us.</Text>
+        <Heading as={'h2'} my={'20px'} fontSize={"2rem"}>Most Vistited{' '}<Text as={'span'} color={"#19b6e0"}>Destinations</Text> </Heading>
+        <Text as={'p'} fontSize={"1.2rem"} color={"#666"}> Some of the most loved itineraries by our travelers, and sooner you'll able to experience the essence of traveling with us.</Text>
       </Text>
       <Flex flexDir={['column', 'column', 'row']}
         gap={'5'}

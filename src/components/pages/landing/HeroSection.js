@@ -8,7 +8,7 @@ import Textra from "react-textra";
 
 function HeroSection() {
     return (
-        <Box
+        <Box p={['1rem','2rem','0']}
             w={'100%'}
             background={['landing-page/hero-bg-mobile.png', "linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #D0FCFF 100%)", "linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #D0FCFF 100%)"]}>
             <Box w={['100%', '100%', '85%']}

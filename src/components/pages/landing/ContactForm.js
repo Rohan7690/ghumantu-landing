@@ -17,29 +17,29 @@ import { EmailIcon } from '@chakra-ui/icons';
 
 const ContactForm = () => {
   return (
-    <Box
+    <Box p={['1rem','2rem','0']}
       w={['100%', '100%', '85%']}
       mx={'auto'}
       my="10"
     >
       <Flex flexDir={['column', 'column', 'row']}>
-        <Box width={[ '100%',  '100%','50%' ]} >
+        <Box width={[ '100%',  '100%','50%' ]}  >
           <VStack spacing={4}   textAlign={['center','center','start']}>
             <Heading as="h2"
-              textAlign={['center', 'left','left']}
-              fontSize={['30px', '48px', '50px']} >
+              textAlign={['center', 'center','left']}
+              fontSize={"2rem"} >
               Get notified when we{' '}<br />
               <Text as="span" color={"#19b6e0"}>
                 launch!
               </Text>
             </Heading>
-            <Text fontSize={['15px', '24px', '25px']} w={[ '100%',  '100%' ]}>
+            <Text fontSize={"1.2rem"} w={[ '100%',  '100%' ]}>
               Submit your email address 📧 below, and we'll let you know as soon as we go live.
             </Text>
-            <HStack spacing={2} fontSize={['15px', '24px', '25px']} w={['100%']} >
-              <Text mt={[ '0px', '90px' ,'90px']}><EmailIcon />{' '}vijay94622@gmail.com (Co-Founder)</Text>
+            <HStack spacing={2} fontSize={"1.2rem"} w={['100%']} >
+              <Text mt={[ '0px', '90px' ,'90px']} ><EmailIcon />{' '}vijay94622@gmail.com (Co-Founder)</Text>
             </HStack>
-            <HStack spacing={2} fontSize={['15px', '24px', '25px']} w={['100%']}>
+            <HStack spacing={2} fontSize={"1.2rem"} w={['100%']}>
               <Text ><EmailIcon />{' '}mmsharma08121997@gmail.com (Co-Founder)</Text>
             </HStack>
           </VStack>
