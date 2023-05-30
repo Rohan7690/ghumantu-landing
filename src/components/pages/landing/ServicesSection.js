@@ -24,8 +24,8 @@ const ServicesSection = () => {
           </Text>
         </Box>
       </Flex>
-      <Flex maxW={"124rem"} my={"3rem"} flexDir={['column', 'column', 'row']} >
-        <Box lineHeight={"1.7"} height={"500px"} mr={"8rem"} w={['100%','100%','480px']} data-aos='fade-right' objectFit={'contain'}  >
+      <Flex justifyContent='center' maxW={"124rem"} my={"3rem"} flexDir={['column', 'column', 'row']} >
+        <Box lineHeight={"1.7"} height={"500px"} mr={"8rem"} w={['100%', '100%', '480px']} data-aos='fade-right' objectFit={'contain'}  >
           <Heading as="h3" color="black" fontSize={"2rem"} my={"20px"}>
             Budget Planner
           </Heading>
@@ -47,7 +47,7 @@ const ServicesSection = () => {
           />
         </Box>
       </Flex>
-      <Flex maxW={"124rem"}  gap={[5, 10, 20]} my={"3rem"}
+      <Flex justifyContent='center' maxW={"124rem"} gap={[5, 10, 20]} my={"3rem"}
         flexDir={['column-reverse', 'column-reverse', 'row']}>
         {/* Left Box */}
         <Box>
@@ -61,7 +61,7 @@ const ServicesSection = () => {
           />
         </Box>
         {/* Right Box */}
-        <Box lineHeight={"1.7"} height={"500px"} w={['100%','100%','480px']} data-aos='fade-left'>
+        <Box lineHeight={"1.7"} height={"500px"} w={['100%', '100%', '480px']} data-aos='fade-left'>
           <Heading as="h3" color="black" fontSize={"2rem"} my={"20px"} >
             Route Mapping
           </Heading>
@@ -75,8 +75,8 @@ const ServicesSection = () => {
           </Button>
         </Box>
       </Flex>
-      <Flex maxW={"124rem"} my={"3rem"} flexDir={['column', 'column', 'row']}>
-        <Box lineHeight={"1.7"} height={"500px"} mr={"8rem"} w={['100%','100%','480px']} data-aos='fade-right'>
+      <Flex justifyContent='center' maxW={"124rem"} my={"3rem"} flexDir={['column', 'column', 'row']}>
+        <Box lineHeight={"1.7"} height={"500px"} mr={"8rem"} w={['100%', '100%', '480px']} data-aos='fade-right'>
           <Heading as="h3" color="black" fontSize={"2rem"} my={"20px"}>
             Local search engine
           </Heading>
@@ -90,15 +90,14 @@ const ServicesSection = () => {
         </Box>
         <Box data-aos='fade-left'>
           <Image
-            width="500px"
+            width={['100%', '100%', "480px"]}
             height="480px"
             src="landing-page/service_search.png"
           />
         </Box>
       </Flex>
     </Box>
-
-  );
-};
+  )
+}
 
 export default ServicesSection;

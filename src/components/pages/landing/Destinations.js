@@ -98,8 +98,8 @@ const Destinations = () => {
           <Flex
             flexDirection={'column'}
             position='relative'
-            m='1.4rem'
-            width={'25rem'}
+            mx={['0', '0', '1.4rem']}
+            width={['100%', '100%', '25rem']}
             justifyContent={'space-between'}
             key={index}
             borderRadius={'8px'}
