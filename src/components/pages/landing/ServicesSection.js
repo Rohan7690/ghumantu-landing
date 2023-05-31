@@ -10,7 +10,7 @@ const ServicesSection = () => {
   }, [])
 
   return (
-    <Box p={['1rem','2rem','0']}
+    <Box p={['2rem','2rem','0']}
       w={['100%', '100%', '85%']}
       mx={'auto'}
       my="10" >

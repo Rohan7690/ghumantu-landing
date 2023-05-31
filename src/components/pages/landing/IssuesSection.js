@@ -19,7 +19,7 @@ const IssuesSection = () => {
   return (
     <Box
       w={['100%', '100%', '85%']}
-      p={['1rem','2rem','0']}
+      p={['2','2rem','0']}
       mx={'auto'}
       my="10" data-aos='fade-up'>
       <Flex direction="column" margin={"0 auto"} maxW={"40rem"} textAlign={"center"} mb={"1rem"}>
