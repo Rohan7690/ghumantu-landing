@@ -98,16 +98,17 @@ const Destinations = () => {
         wrap={'wrap'}>
         {destinations.map((destination, index) => (
           <Flex
+            gap={5}
             flexDirection={'column'}
             position='relative'
             mx={['0', '0', '1.4rem']}
+            my={'1rem'}
             width={['100%', '100%', '22rem']}
-            justifyContent={'space-between'}
             key={index}
             borderRadius={'8px'}
             overflow={'hidden'}
             transition={'ease-in'}
-            height={'670px'}
+            // height={'670px'}
             border={'2px solid #dfdfdf'}
             _hover={{
               boxShadow: '0px 0px 7px 0px rgba(0,0,0,0.25)',
@@ -115,8 +116,8 @@ const Destinations = () => {
               transition: 'all 0.3s ease-in-out'
             }}
           >
-            <Box as="div" w='100%' height={'10rem'}>
-              <Image width={['inherit']} height={['280px', '300px', '200px']}
+            <Box width={['inherit']} height={['280px', '300px', '200px']}>
+              <Image w='100%' height={['280px', '300px', '200px']}
                 objectFit='cover'
                 src={destination?.img.src} alt="card image" />
             </Box>
@@ -156,8 +157,8 @@ const Destinations = () => {
               </Stack>
             </Box>
             {/* //--------------------------------- Destination Card Content --------------------------- */}
-            <Box className="destination_CardContent" m='1rem'>
-              <Text fontSize='1.8rem' my={'10px'}
+            <Stack spacing={5} className="destination_CardContent" m='1rem'>
+              <Text fontSize='1.6rem'
                 __css={{
                   fontWeight: '700',
                   lineHeight: '140%',
@@ -166,12 +167,13 @@ const Destinations = () => {
               >
                 {destination?.heading}
               </Text>
-              <Box className="destination_Card--para" h='170px' fontSize={['1rem', '1rem', '1.2rem']}>{destination?.desc}</Box>
+              <Box className="destination_Card--para" h='180px'
+                fontSize={['1rem', '1rem', '1.2rem']}>
+                {destination?.desc}
+              </Box>
               {/* //--------------------------------- Card info stats --------------------------- */}
-              <Flex
+              <Stack direction={'row'}
                 color='#666666'
-                gap={'30px'}
-                my={'15px'}
                 className="destination_CardStats" >
                 <Flex as={'span'}
                   alignItems='center'
@@ -190,14 +192,14 @@ const Destinations = () => {
                   <AiFillStar size={'20px'} className="destination_CardStats--icon yellow" />
                   <Text color='#666666' fontSize={['sm', 'sm', 'md']}>{destination.rating}</Text>
                 </Flex>
-              </Flex>
+              </Stack>
               {/* //--------------------------------- Card CTA --------------------------- */}
               <Box>
                 <button className="btn btn-getStarted" style={{ width: '90%', marginBottom: '0px', marginTop: '0px' }}>
                   Notify Me
                 </button>
               </Box>
-            </Box>
+            </Stack>
           </Flex>
         ))}
       </Flex>
