@@ -3,14 +3,7 @@ import { Box, Heading, Flex, Text, Image } from "@chakra-ui/react";
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import React, { useEffect } from "react";
-const listitem = [
-  {
-    Itemimg: '',
-    ItemHeading: '',
-    Itempara: '',
 
-  }
-]
 const IssuesSection = () => {
   useEffect(() => {
     AOS.init();
@@ -43,7 +36,7 @@ const IssuesSection = () => {
             transform: "translateY(-5px)",
             transition: "all .2s ease-in-out",
           }}
-          width={['100%','100%',"100%"]} height={['100%','100%',"300px"]} backgroundImage={"landing-page/feature_card_bg1.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30"} pl={"10px"}>
+          width={['100%','100%',"100%"]} height={['100%','100%',"100%","100%",'300px']} backgroundImage={"landing-page/feature_card_bg1.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30"} pl={"10px"}>
           <Image
             width="72px"
             height="72px"
@@ -62,7 +55,7 @@ const IssuesSection = () => {
             transform: "translateY(-5px)",
             transition: "all .2s ease-in-out",
           }}
-          width={['100%','100%',"100%"]} height={['100%','100%',"300px"]} flexDir={['column-reverse', 'column-reverse', 'row']}
+          width={['100%','100%',"100%"]} height={['100%','100%',"100%","100%",'300px']} flexDir={['column-reverse', 'column-reverse', 'row']}
           backgroundImage={"landing-page/feature_card_bg2.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30px"} pl={"10px"}>
           <Image
             width="72px"
@@ -82,7 +75,7 @@ const IssuesSection = () => {
             transform: "translateY(-5px)",
             transition: "all .2s ease-in-out",
           }}
-          width={['100%','100%',"100%"]} height={['100%','100%',"300px"]} backgroundImage={"landing-page/feature_card_bg3.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30"} pl={"10px"}>
+          width={['100%','100%',"100%"]} height={['100%','100%',"100%","100%",'300px']} backgroundImage={"landing-page/feature_card_bg3.png"} border={"2px solid hsla(0,0%,40%,.1)"} borderRadius={"10px"} pt={"30"} pl={"10px"}>
           <Image
             width="72px"
             height="72px"
