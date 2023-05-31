@@ -48,7 +48,7 @@ const Navbar = () => {
                             onClick={onOpen}
                         />
                     </Box>
-                    <Flex w='100%' display={['none', 'none', 'flex']} gap={5}>
+                    <Flex w='100%' display={['none', 'none', 'flex']}>
                         <Flex alignItems='center' w='100%' justifyContent='center' gap={'10'}>
                             <Text>
                                 Home
@@ -96,7 +96,7 @@ const Navbar = () => {
                                 color={"white"}
                                 borderRadius={"100px"}
                                 background={"linear-gradient(93.01deg,#14cdff .65%,#00c2ff)"}>
-                                Notify Me
+                                Login/ Signup
                             </Button>
                         </Box>
                     </Flex>
