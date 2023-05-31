@@ -10,7 +10,7 @@ function HeroSection() {
     return (
         <Box p={['2rem','2rem','0']}
             w={'100%'}
-            background={['landing-page/hero-bg-mobile.png', "linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #D0FCFF 100%)", "linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #D0FCFF 100%)"]}>
+            background={'linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #D0FCFF 100%)'}>
             <Box w={['100%', '100%', '85%']}
                 mx={'auto'}
                 >
