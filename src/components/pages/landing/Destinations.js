@@ -195,7 +195,7 @@ const Destinations = () => {
               </Stack>
               {/* //--------------------------------- Card CTA --------------------------- */}
               <Box>
-                <button className="btn btn-getStarted" style={{ width: '90%', marginBottom: '0px', marginTop: '0px' }}>
+                <button className="btn1 btn1-getStarted" style={{ width: '90%', marginBottom: '0px', marginTop: '0px' }}>
                   Notify Me
                 </button>
               </Box>

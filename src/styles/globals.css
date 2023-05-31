@@ -1,4 +1,4 @@
-.btn {
+.btn1 {
     background: linear-gradient(93.01deg, #14cdff 0.65%, #00c2ff 100%);
     font-weight: 600;
     margin: 2rem 1rem;
@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
 }
-.btn-getStarted{
+.btn1-getStarted {
     background: linear-gradient(93.01deg, #14cdff 0.65%, #00c2ff 100%);
     font-weight: 600;
     margin: 2rem 1rem;

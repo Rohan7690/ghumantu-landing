@@ -166,7 +166,7 @@ const Navbar = () => {
                             }}>
                                 <Text as={Link}>Contact</Text>
                             </Box>
-                            <button className="btn btn-getStarted btn-getStarted--nav"
+                            <button className="btn1 btn1-getStarted btn-getStarted--nav"
                                 onClick={
                                     () => {
                                         document.getElementById("contactus").scrollIntoView({ behavior: "smooth" })
